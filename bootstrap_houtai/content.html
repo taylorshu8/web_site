@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>XX后台</title>
+    <link rel="stylesheet" href="../plugs/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="../plugs/animate.css">
+    <script src="../plugs/jquery-3.2.1.min.js"></script>
+    <script src="../plugs/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="index.html" class="navbar-brand">XX Admin</a></div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav ">
+                <li><a href="index.html"><span class="glyphicon glyphicon-home"></span>&nbsp后台首页</a></li>
+                <li><a href="user_list.html"><span class="glyphicon glyphicon-user"></span>&nbsp用户管理</a></li>
+                <li class="active"><a href="content.html"><span class="glyphicon glyphicon-list-alt"></span>&nbsp内容管理</a></li>
+                <li><a href="tag.html"><span class="glyphicon glyphicon-tag"></span>&nbsp标签管理</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button">
+                        admin
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dLabel">
+                        <li><a href="#"><span class="glyphicon glyphicon-screenshot"></span>&nbsp前台首页</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-user"></span>&nbsp个人主页</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-cog"></span>&nbsp个人设置</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-credit-card"></span>&nbsp账户中心</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-heart"></span>&nbsp我的收藏</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><span class="glyphicon glyphicon-off"></span>&nbsp退出</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container">
+    <div class="row">
+        <div class="col-md-2">
+            <div class="list-group">
+                <a href="content.html" class="list-group-item active">内容管理</a>
+                <a href="content_add.html" class="list-group-item">添加内容</a>
+            </div>
+        </div>
+        <div class="col-md-10">
+            <div class="page-header">
+                <h1>文章管理</h1>
+            </div>
+            <ul class="nav nav-tabs">
+                <li class="active">
+                    <a href="content.html " >文章列表</a>
+                </li>
+                <li >
+                    <a href="content_add.html">添加内容</a>
+                </li>
+            </ul>
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>标题</th>
+                    <th>作者</th>
+                    <th>发布时间</th>
+                    <th>操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th>文章文章文章文章文章文章文章文章文章文章</th>
+                    <th>张三</th>
+                    <td>2018/5/1</td>
+                    <td>
+                        <div role="presentation" class="dropdown">
+                            <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                                    aria-haspopup="true" aria-expanded="false">
+                                操作 <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">编辑</a></li>
+                                <li><a href="#">删除</a></li>
+                                <li><a href="#">全局置顶</a></li>
+
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th>文章文章文章文章文章文章文章文章文章文章</th>
+                    <th>张三</th>
+                    <td>2018/5/1</td>
+                    <td>
+                        <div role="presentation" class="dropdown">
+                            <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                                    aria-haspopup="true" aria-expanded="false">
+                                操作 <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">编辑</a></li>
+                                <li><a href="#">删除</a></li>
+                                <li><a href="#">全局置顶</a></li>
+
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th>文章文章文章文章文章文章文章文章文章文章</th>
+                    <th>张三</th>
+                    <td>2018/5/1</td>
+                    <td>
+                        <div role="presentation" class="dropdown">
+                            <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                                    aria-haspopup="true" aria-expanded="false">
+                                操作 <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">编辑</a></li>
+                                <li><a href="#">删除</a></li>
+                                <li><a href="#">全局置顶</a></li>
+
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th>文章文章文章文章文章文章文章文章文章文章</th>
+                    <th>张三</th>
+                    <td>2018/5/1</td>
+                    <td>
+                        <div role="presentation" class="dropdown">
+                            <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                                    aria-haspopup="true" aria-expanded="false">
+                                操作 <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">编辑</a></li>
+                                <li><a href="#">删除</a></li>
+                                <li><a href="#">全局置顶</a></li>
+
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th>文章文章文章文章文章文章文章文章文章文章</th>
+                    <th>张三</th>
+                    <td>2018/5/1</td>
+                    <td>
+                        <div role="presentation" class="dropdown">
+                            <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                                    aria-haspopup="true" aria-expanded="false">
+                                操作 <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">编辑</a></li>
+                                <li><a href="#">删除</a></li>
+                                <li><a href="#">全局置顶</a></li>
+
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th>文章文章文章文章文章文章文章文章文章文章</th>
+                    <th>张三</th>
+                    <td>2018/5/1</td>
+                    <td>
+                        <div role="presentation" class="dropdown">
+                            <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                                    aria-haspopup="true" aria-expanded="false">
+                                操作 <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">编辑</a></li>
+                                <li><a href="#">删除</a></li>
+                                <li><a href="#">全局置顶</a></li>
+
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th>文章文章文章文章文章文章文章文章文章文章</th>
+                    <th>张三</th>
+                    <td>2018/5/1</td>
+                    <td>
+                        <div role="presentation" class="dropdown">
+                            <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                                    aria-haspopup="true" aria-expanded="false">
+                                操作 <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">编辑</a></li>
+                                <li><a href="#">删除</a></li>
+                                <li><a href="#">全局置顶</a></li>
+
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th>文章文章文章文章文章文章文章文章文章文章</th>
+                    <th>张三</th>
+                    <td>2018/5/1</td>
+                    <td>
+                        <div role="presentation" class="dropdown">
+                            <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                                    aria-haspopup="true" aria-expanded="false">
+                                操作 <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">编辑</a></li>
+                                <li><a href="#">删除</a></li>
+                                <li><a href="#">全局置顶</a></li>
+
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th>文章文章文章文章文章文章文章文章文章文章</th>
+                    <th>张三</th>
+                    <td>2018/5/1</td>
+                    <td>
+                        <div role="presentation" class="dropdown">
+                            <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                                    aria-haspopup="true" aria-expanded="false">
+                                操作 <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">编辑</a></li>
+                                <li><a href="#">删除</a></li>
+                                <li><a href="#">全局置顶</a></li>
+
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <nav aria-label="Page navigation" class="pull-right">
+                <ul class="pagination">
+                    <li>
+                        <a href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    <li class="active"><a href="#" >1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li>
+                        <a href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p>
+                    Copyright © 2018-2018 www.xxxxxxx.com
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+<script>
+    $(function () {
+        $('.nav').singlePageNav({
+            offset: 70
+        });
+//     小屏时点击导航时导航关闭
+        $('.navbar-collapse a').click(function () {
+            $('.navbar-collapse').collapse('hide');
+        });
+        new WOW().init()
+    })
+</script>
+</body>
+</html>

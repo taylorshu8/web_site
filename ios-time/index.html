@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> ios-time</title>
+    <link rel="icon" href="icon/favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="icon/favicon.ico">
+</head>
+<style>
+    a {
+        position: relative;
+        color: black;
+        text-decoration: none;
+        display:block;
+        width: 100px;
+        height: 16px;
+        margin:0 auto;
+
+    }
+
+    a:hover, a:active {
+        color: #707070
+    }
+
+    a:visited {
+        color: deepskyblue
+    }
+    canvas{
+        position: absolute;
+        top:0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        transform: scale(0.5);
+        -moz-transform:scale(0.5);
+        -webkit-transform:scale(0.5);
+        -o-transform:scale(0.5);
+    }
+</style>
+<body onload="draw()">
+<a href="#" rel="sidebar" onclick="addFav()" title="ios-time">收藏本站</a>
+<canvas id="canvas" width=500 height=500>如果你看到这段文字，说明你的浏览器弱爆了！
+</canvas>
+</body>
+<script type="text/javascript">
+    function addFav() {
+        var url = window.location;
+        var title = document.title;
+        if (!!window.ActiveXObject || "ActiveXObject" in window) {
+            try {
+                window.external.AddFavorite(url, title);
+            }
+            catch (e) {
+                window.external.addToFavoritesBar(url, title);  //IE8
+            }
+        }
+        else if (window.sidebar) {
+            window.sidebar.addPanel(title, url, "");
+        }
+        else {
+            alert('您的浏览器不支持,请按 Ctrl+D 手动收藏!');
+            return false
+        }
+    }
+</script>
+<script>
+    function draw() {
+        var canvas = document.getElementById('canvas');
+        var context = canvas.getContext('2d');
+        context.save();
+        context.translate(250, 250);
+        context.save();
+        context.beginPath();
+        context.moveTo(152, -240);
+        context.arc(152, -152, 88, -Math.PI / 2, 0);
+        context.lineTo(240, 152);
+        context.arc(152, 152, 88, 0, Math.PI / 2);
+        context.lineTo(-152, 240);
+        context.arc(-152, 152, 88, Math.PI / 2, Math.PI);
+        context.lineTo(-240, -152);
+        context.arc(-152, -152, 88, Math.PI, -Math.PI / 2);
+        context.lineTo(152, -240);
+        context.fillStyle = "#000";
+        context.closePath();
+        context.fill();
+
+        context.beginPath();
+        context.moveTo(210, 0);
+        context.arc(0, 0, 210, 0, 2 * Math.PI);
+        context.fillStyle = "#fff";
+        context.closePath();
+        context.fill();
+
+        context.beginPath();
+        context.moveTo(12, 0);
+        context.arc(0, 0, 12, 0, 2 * Math.PI);
+        context.fillStyle = "#000";
+        context.closePath();
+        context.fill();
+        context.restore();
+
+        context.save();
+        var deg = 2 * Math.PI / 12;
+        context.beginPath();
+        for (var i = 1; i < 13; i++) {
+            var x1 = Math.sin(i * deg);
+            var y1 = -Math.cos(i * deg);
+            context.fillStyle = "#000";
+            context.font = "bold 34px San Francisco";
+            context.textAlign = 'center';
+            context.textBaseline = 'middle';
+            context.fillText(i, x1 * 165, y1 * 165);
+        }
+        context.closePath();
+        context.restore();
+
+
+        var time = new Date();
+        var h = (time.getHours() % 12) * 2 * Math.PI / 12;
+        var m = time.getMinutes() * 2 * Math.PI / 60;
+        var s = time.getSeconds() * 2 * Math.PI / 60;
+        var t = time.getMilliseconds() * 2 * Math.PI / 60000;
+
+        context.save();
+        context.rotate(h + m / 12 + s / 720);
+        context.beginPath();
+        context.moveTo(3, 0);
+        context.lineTo(3, -120);
+        context.lineTo(0, -122);
+        context.lineTo(-3, -120);
+        context.lineTo(-3, 0);
+        context.lineTo(3, 0);
+        context.fillStyle = "#000";
+        context.closePath();
+        context.fill();
+        context.restore();
+
+        context.save();
+        context.rotate(m + s / 60);
+        context.beginPath();
+        context.moveTo(3, 0);
+        context.lineTo(3, -170);
+        context.lineTo(0, -172);
+        context.lineTo(-3, -170);
+        context.lineTo(-3, 0);
+        context.lineTo(3, 0);
+        context.fillStyle = "#000";
+        context.closePath();
+        context.fill();
+        context.restore();
+
+        context.beginPath();
+        context.moveTo(5, 0);
+        context.arc(0, 0, 5, 0, 2 * Math.PI);
+        context.fillStyle = "#e86d6b";
+        context.closePath();
+        context.fill();
+
+        context.save();
+        context.rotate(s + t);
+        context.beginPath();
+        context.moveTo(0, 30);
+        context.lineTo(0, -185);
+        context.strokeStyle = "#e86d6b";
+        context.lineWidth = 3;
+        context.stroke();
+        context.closePath();
+        context.restore();
+        context.restore();
+
+        setTimeout(draw, 16);
+    }
+
+
+</script>
+</html>

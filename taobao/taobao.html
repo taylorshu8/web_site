@@ -1,0 +1,2261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>淘宝网 - 淘！我喜欢</title>
+    <link rel="icon" href="icon/taobao.icon" type="image/x-icon">
+    <link rel="stylesheet" href="initializtion.css" type="text/css">
+    <link rel="stylesheet" href="main.css" type="text/css">
+    <script src="tb.js" async></script>
+    <meta name="description"
+          content="淘宝网 - 亚洲较大的网上交易平台，提供各类服饰、美容、家居、数码、话费/点卡充值… 数亿优质商品，同时提供担保交易(先收货后付款)等安全交易保障服务，并由商家提供退货承诺、破损补寄等消费者保障服务，让你安心享受网上购物乐趣！"/>
+    <meta name="keyword"
+          content="淘宝,掏宝,网上购物,C2C,在线交易,交易市场,网上交易,交易市场,网上买,网上卖,购物网站,团购,网上贸易,安全购物,电子商务,放心买,供应,买卖信息,网店,一口价,拍卖,网上开店,网络购物,打折,免费开店,网购,频道,店铺"/>
+    <meta name="author" content="sch">
+
+</head>
+<body>
+<div class="lds-css ng-scope">
+    <div class="lds-eclipse">
+        <div></div>
+        <span>0%</span>
+    </div>
+</div>
+<div class="tb_floatsh" style="display: none" id="tb_floatsh">
+    <div class="com_width">
+        <div class="img left">
+            <a href="javascript:void(0);"><img src="icon/tb_top2_logo.png" alt="tb_top2_logo"></a>
+        </div>
+        <div class="tb_top2_shmd right ">
+            <div class="tb_top2_shmdinput left">
+                <input type="text" class="tb_top2_shmd left" placeholder="     广角镜头手机壳" onkeyup="keyd(event)"
+                       autofocus="autofocus">
+                <div class="tb_top2_shmdinputimg left" id="inputimg">
+                    <a href="#"><img src="icon/camera.png" alt="upload"></a>
+                </div>
+            </div>
+            <button class="tb_top2_shmdbtn right" type="submit">搜索</button>
+        </div>
+    </div>
+</div>
+<div class="tb_floatnav" id="tb_floatnav">
+    <a class="nav active color1" href="javascript:void(0);" id="aghh">爱逛<br>好货</a>
+    <a class="nav color1" href="javascript:void(0);" id="hdzb">好店<br>直播</a>
+    <a class="nav color2" href="javascript:void(0);" id="pzts">品质<br>特色</a>
+    <a class="nav color1" href="javascript:void(0);" id="shrm">实惠<br>热卖</a>
+    <a class="nav color1" href="javascript:void(0);" id="cnxh">猜你<br>喜欢</a>
+    <a style="display: none" href="javascript:void(0);" id="retop"><i class="iconfont">&#xe76e;</i><br>顶部</a>
+    <a class="tb_floatfk" href="javascript:void(0);">反馈</a>
+    <a href="javascript:void(0);">暴恐<br>举报</a>
+</div>
+<div class="tb_top">
+    <div class="com_width">
+        <ul class="tb_top_navl left">
+            <li class="tb_top_navl_region left">
+                <span class="tb_top_navl_regionspan">中国大陆<img class="down" src="icon/down.png" alt="down">
+                </span>
+                <div class="tb_top_navl_regiondrop">
+                    <ul>
+                        <li><a href="#">全球</a></li>
+                        <li><a href="#">中国</a>大陆</li>
+                        <li><a href="#">香港</a></li>
+                        <li><a href="#">台湾</a></li>
+                        <li><a href="#">澳门</a></li>
+                        <li><a href="#">韩国</a></li>
+                        <li><a href="#">马来西亚</a></li>
+                        <li><a href="#">澳大利亚</a></li>
+                        <li><a href="#">新加坡</a></li>
+                        <li><a href="#">新西兰</a></li>
+                        <li><a href="#">加拿大</a></li>
+                        <li><a href="#">美国</a></li>
+                        <li><a href="#">日本</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="tb_top_navl_login left"><a href="#">亲，请登录</a></li>
+            <li class="tb_top_navl_n left"><a href="#">免费注册</a></li>
+            <li class="tb_top_navl_n left"><a href="#">手机逛淘宝</a></li>
+        </ul>
+        <ul class="tb_top_navr right">
+            <li class="tb_top_navr_mtb">
+                <span class="tb_top_navr_mtbspan">
+                    <a href="#">我的淘宝</a>
+                    <img class="down" src="icon/down.png" alt="down">
+                </span>
+                <div class="tb_top_navr_mtbdrop tb_top_navr_drop ">
+                    <ul>
+                        <li><a href="#">已买到的宝贝</a></li>
+                        <li><a href="#">我的足迹</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="tb_top_navr_shopcar">
+                <span class="tb_top_navr_shopcarspan">
+                    <a href="#">购物车</a>
+                    <img class="down" src="icon/down.png" alt="down">
+                </span>
+            </li>
+            <li class="tb_top_navr_favorites ">
+                <span class="tb_top_navr_favoritesspan">
+                    <a href="#">收藏夹</a>
+                    <img class="down" src="icon/down.png" alt="down">
+                </span>
+                <div class="tb_top_navl_favorites tb_top_navr_drop">
+                    <ul>
+                        <li><a href="#">收藏的宝贝</a></li>
+                        <li><a href="#">收藏的店铺</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="tb_top_navl_shopclass"><a href="#">商品分类</a></li>
+            <li><span>&#124</span></li>
+            <li class="tb_top_navr_seller">
+                <span class="tb_top_navr_sellerspan">
+                    <a href="#">卖家中心</a>
+                    <img class="down" src="icon/down.png" alt="down">
+                </span>
+                <div class="tb_top_navr_sellerdrop tb_top_navr_drop">
+                    <ul>
+                        <li><a href="#">免费开店</a></li>
+                        <li><a href="#">已卖出的宝贝</a></li>
+                        <li><a href="#">出售中的宝贝</a></li>
+                        <li><a href="#">卖家服务市场</a></li>
+                        <li><a href="#">卖家培训中心</a></li>
+                        <li><a href="#">体检中心</a></li>
+                        <li><a href="#">问商友</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="tb_top_navr_contact">
+                <span class="tb_top_navr_contactspan">
+                    <a href="#">联系客服</a>
+                    <img class="down" src="icon/down.png" alt="down">
+                </span>
+                <div class="tb_top_navl_contactdrop tb_top_navr_drop">
+                    <ul>
+                        <li><a href="#">消费者客服</a></li>
+                        <li><a href="#">卖家客服</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="tb_top_navl_guide">
+                <span class="tb_top_navl_guidespan">
+                    <a href="#">网站导航</a>
+                <img class="down" src="icon/down.png" alt="down">
+                </span>
+                <div class="tb_top_navl_guidedrop">
+                    <div class="tb_top_navl_guidedrop4">
+                        <h3>主题市场</h3>
+                        <ul>
+                            <li><a href="#">女装</a></li>
+                            <li><a href="#">男装</a></li>
+                            <li><a href="#">内衣</a></li>
+                            <li><a href="#">鞋靴</a></li>
+                            <li><a href="#">箱包</a></li>
+                            <li><a href="#">婴童</a></li>
+                            <li><a href="#">家电</a></li>
+                            <li><a href="#">数码</a></li>
+                            <li><a href="#">手机</a></li>
+                            <li><a href="#">美妆</a></li>
+                            <li><a href="#">珠宝</a></li>
+                            <li><a href="#">眼镜</a></li>
+                            <li><a href="#">手表</a></li>
+                            <li><a href="#">运动</a></li>
+                            <li><a href="#">户外</a></li>
+                            <li><a href="#">乐器</a></li>
+                            <li><a href="#">游戏</a></li>
+                            <li><a href="#">动漫</a></li>
+                            <li><a href="#">影视</a></li>
+                            <li><a href="#">美食</a></li>
+                            <li><a href="#">鲜花</a></li>
+                            <li><a href="#">宠物</a></li>
+                            <li><a href="#">农资</a></li>
+                            <li><a href="#">房产</a></li>
+                            <li><a href="#">装修</a></li>
+                            <li><a href="#">建材</a></li>
+                            <li><a href="#">家居</a></li>
+                            <li><a href="#">百货</a></li>
+                            <li><a href="#">汽车</a></li>
+                            <li><a href="#">二手车</a></li>
+                            <li><a href="#">办公</a></li>
+                            <li><a href="#">定制</a></li>
+                            <li><a href="#">教育</a></li>
+                            <li><a href="#">卡券</a></li>
+                            <li><a href="#">本地</a></li>
+                        </ul>
+                    </div>
+                    <div class="tb_top_navl_guidedrop3">
+                        <h3>特色市场</h3>
+                        <ul>
+                            <li><a href="#">iFashion</a></li>
+                            <li><a href="#">爱逛街</a></li>
+                            <li><a href="#">美妆秀</a></li>
+                            <li><a href="#">全球购</a></li>
+                            <li><a href="#">腔调</a></li>
+                            <li><a href="#">淘女郎</a></li>
+                            <li><a href="#">星店</a></li>
+                            <li><a href="#">极有家</a></li>
+                            <li><a href="#">特色中国</a></li>
+                            <li><a href="#">拍卖会</a></li>
+                            <li><a href="#">淘宝众筹</a></li>
+                            <li><a href="#">中国制造</a></li>
+                            <li><a href="#">飞猪</a></li>
+                            <li><a href="#">亲宝贝</a></li>
+                            <li><a href="#">咸鱼</a></li>
+                            <li><a href="#">农资</a></li>
+                            <li><a href="#">天天特价</a></li>
+                            <li><a href="#">Outlets</a></li>
+                            <li><a href="#">俪人购</a></li>
+                            <li><a href="#">聚名品</a></li>
+                            <li><a href="#">淘抢购</a></li>
+                            <li><a href="#">全球精选</a></li>
+                            <li><a href="#">非常大牌</a></li>
+                            <li><a href="#">试用</a></li>
+                            <li><a href="#">量贩团</a></li>
+                            <li><a href="#">阿里翻译</a></li>
+                        </ul>
+                    </div>
+                    <div class="tb_top_navl_guidedrop2">
+                        <h3>阿里APP</h3>
+                        <ul>
+                            <li><a href="#">淘宝</a></li>
+                            <li><a href="#">天猫</a></li>
+                            <li><a href="#">支付宝</a></li>
+                            <li><a href="#">聚划算</a></li>
+                            <li><a href="#">飞猪</a></li>
+                            <li><a href="#">蚂蚁聚宝</a></li>
+                            <li><a href="#">旺信</a></li>
+                            <li><a href="#">闲鱼</a></li>
+                            <li><a href="#">阿里钱盾</a></li>
+                            <li><a href="#">钉钉</a></li>
+                            <li><a href="#">高德地图</a></li>
+                            <li><a href="#">点点虫</a></li>
+                            <li><a href="#">虾米音乐</a></li>
+                            <li><a href="#">淘票票</a></li>
+                            <li><a href="#">菜鸟裹裹</a></li>
+                            <li><a href="#">爱逛街</a></li>
+                            <li><a href="#">拍卖会</a></li>
+                            <li><a href="#">阿里云</a></li>
+                            <li><a href="#">网上银行</a></li>
+                            <li><a href="#">阿里邮箱</a></li>
+                            <li><a href="#">阿里众包</a></li>
+                        </ul>
+                    </div>
+                    <div class="tb_top_navl_guidedrop1">
+                        <h3>精彩推荐集</h3>
+                        <ul>
+                            <li><a href="#">余额宝</a></li>
+                            <li><a href="#">大牌捡宝</a></li>
+                            <li><a href="#">淘公仔</a></li>
+                            <li><a href="#">浏览器</a></li>
+                            <li><a href="#">淘宝香港</a></li>
+                            <li><a href="#">淘宝台湾</a></li>
+                            <li><a href="#">淘宝全球</a></li>
+                            <li><a href="#">淘宝东南亚</a></li>
+                            <li><a href="#">闺蜜淘货</a></li>
+                            <li><a href="#">大众品审</a></li>
+                            <li><a href="#">淘工作</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="tb_top2">
+    <div class="com_width">
+        <div class="tb_top2_logo left">
+            <a href="#"><img src="icon/tb_top2_logo.png" alt="tb_top2_log"></a>
+        </div>
+        <div class="tb_top2_sh left">
+            <div class="tb_top2_shtopdiv">
+                <ul class="tb_top2_shtop left">
+                    <li class="tb_top2_shtop_li tb_top2_shtopact" onclick="onc(event,'shbot1')"><a href="#">宝贝</a></li>
+                    <li class="tb_top2_shtop_li" onclick="onc(event,'shbot2')"><a href="#">天猫</a></li>
+                    <li class="tb_top2_shtop_li" onclick="onc(event,'shbot3')"><a href="#">店铺</a></li>
+                </ul>
+            </div>
+            <div class="tb_top2_shmd left ">
+                <div class="tb_top2_shmdinput left">
+                    <input id="tb_top2_shmd" type="text" class="tb_top2_shmd left" placeholder="     广角镜头手机壳" onkeyup="keyd(event)"
+                           autofocus="autofocus">
+                    <div class="tb_top2_shmdinputimg left" id="inputimg">
+                        <a href="#"><img src="icon/camera.png" alt="upload"></a>
+                    </div>
+                </div>
+                <button class="tb_top2_shmdbtn right" type="submit">搜索</button>
+            </div>
+            <div id="shbot1" class="tb_top2_shbot active">
+                <ul class="left">
+                    <li><a class="active" href="#">新款连衣裙</a></li>
+                    <li><a href="#">四件套</a></li>
+                    <li><a class="active" href="#">潮流T恤</a></li>
+                    <li><a href="#">时尚女鞋</a></li>
+                    <li><a href="#">短裤</a></li>
+                    <li><a class="active" href="#">半身裙</a></li>
+                    <li><a href="#">男士外套</a></li>
+                    <li><a href="#">墙纸</a></li>
+                    <li><a href="#">行车记录仪</a></li>
+                    <li><a href="#">新款男鞋</a></li>
+                    <li><a href="#">耳机</a></li>
+                </ul>
+                <span><a href="#">更多></a></span>
+            </div>
+            <div id="shbot2" class="tb_top2_shbot">
+                <ul class="left">
+                    <li><a href="#">针织衫</a></li>
+                    <li><a class="active" href="#">羽绒服</a></li>
+                    <li><a href="#">四件套</a></li>
+                    <li><a class="active" href="#">扫地机器人</a></li>
+                    <li><a href="#">客厅灯</a></li>
+                    <li><a href="#">男士毛衣</a></li>
+                    <li><a class="active" href="#">女鞋</a></li>
+                    <li><a href="#">双肩包</a></li>
+                    <li><a class="active" href="#">打底裤</a></li>
+                    <li><a href="#">文胸</a></li>
+                    <li><a href="#">行车记录仪</a></li>
+                    <li><a class="active" href="#">面膜</a></li>
+                    <li><a href="#">牛奶</a></li>
+                </ul>
+            </div>
+            <div id="shbot3" class="tb_top2_shbot">
+                <ul class="left">
+                    <li><a class="active" href="#">新款连衣裙</a></li>
+                    <li><a href="#">四件套</a></li>
+                    <li><a class="active" href="#">潮流T恤</a></li>
+                    <li><a href="#">时尚女鞋</a></li>
+                    <li><a href="#">短裤</a></li>
+                    <li><a class="active" href="#">半身裙</a></li>
+                    <li><a href="#">男士外套</a></li>
+                    <li><a href="#">墙纸</a></li>
+                    <li><a href="#">行车记录仪</a></li>
+                    <li><a href="#">新款男鞋</a></li>
+                    <li><a href="#">耳机</a></li>
+                </ul>
+                <span><a href="#">更多></a></span>
+            </div>
+        </div>
+        <div class="tb_top2_mtaobao right" id="tb_top2_mtb">
+            <a class="tb_top2_mtaobaoclose" href="#" onclick="qrclose()"></a>
+            <a class="tb_top2_qrcode" href="#"><p>手机淘宝</p> <img class="tb_top2_qrcodeimg" src="icon/mtaobao.png"
+                                                                alt="mtaobao"></a>
+        </div>
+    </div>
+</div>
+<div class="tb_md_nav ">
+    <div class="com_width">
+        <h2>主题市场</h2>
+        <ul class="tb_md_navul1">
+            <li><a href="#">天猫</a></li>
+            <li><a href="#">聚划算</a></li>
+            <li><a href="#">天猫超市</a></li>
+        </ul>
+        <span>|</span>
+        <ul>
+            <li><a href="#">淘抢购</a></li>
+            <li><a href="#">电器城</a></li>
+            <li><a href="#">司法拍卖</a></li>
+            <li><a href="#">中国制造</a></li>
+            <li><a href="#">兴农扶贫</a></li>
+        </ul>
+        <span>|</span>
+        <ul>
+            <li><a href="#">飞猪旅行</a></li>
+            <li><a href="#">智能生活</a></li>
+            <li><a href="#">苏宁易购</a></li>
+        </ul>
+    </div>
+</div>
+<div class="tb_md left">
+    <div class="com_width">
+        <div class="tb_md_lt left">
+            <ul>
+                <li>
+                    <a href="#">女装</a>/
+                    <a href="#">男装</a>/
+                    <a href="#">内衣</a>
+                </li>
+                <li>
+                    <a href="#">鞋靴</a>/
+                    <a href="#">箱包</a>/
+                    <a href="#">配件</a>
+                <li>
+                    <a href="#">童装玩具</a>/
+                    <a href="#">孕产</a>/
+                    <a href="#">用品</a>
+                <li>
+                    <a href="#">家电</a>/
+                    <a href="#">数码</a>/
+                    <a href="#">手机</a>
+                <li>
+                    <a href="#">美妆</a>/
+                    <a href="#">洗护</a>/
+                    <a href="#">保健品</a>
+                <li>
+                    <a href="#">珠宝</a>/
+                    <a href="#">眼镜</a>/
+                    <a href="#">手表</a>
+                <li>
+                    <a href="#">运动</a>/
+                    <a href="#">户外</a>/
+                    <a href="#">乐器</a>
+                <li>
+                    <a href="#">游戏</a>/
+                    <a href="#">动漫</a>/
+                    <a href="#">影视</a>
+                <li><a href="#">美食</a>/
+                    <a href="#">生鲜</a>/
+                    <a href="#">零食</a>
+                <li><a href="#">鲜花</a>/
+                    <a href="#">宠物</a>/
+                    <a href="#">农资</a>
+                <li><a href="#">房产</a>/
+                    <a href="#">装修</a>/
+                    <a href="#">建材</a>
+               <li>
+                   <a href="#">家居</a>/
+                    <a href="#">家饰</a>/
+                    <a href="#">家纺</a>
+                <li>
+                    <a href="#">汽车</a>/
+                    <a href="#">二手车</a>/
+                    <a href="#">用品</a>
+                <li>
+                    <a href="#">办公</a>/
+                    <a href="#">DIY</a>/
+                    <a href="#">五金电子</a>
+                <li>
+                    <a href="#">百货</a>/
+                    <a href="#">餐厨</a>/
+                    <a href="#">家庭保健</a>
+                <li>
+                    <a href="#">学习</a>/
+                    <a href="#">卡券</a>/
+                    <a href="#">本地服务</a>
+                </li>
+            </ul>
+        </div>
+        <div class="tb_md_md left">
+            <div  class="tb_md_mdslide left" id="tb_md_mdslide">
+                <div id="tb_slide1" class="tb_slide1">
+                    <a href="#"><img src="picture/slide1-5.jpg" alt="slide1-5"></a>
+                    <a href="#"><img src="picture/slide1-1.jpg" alt="slide1-1"></a>
+                    <a href="#"><img src="picture/slide1-2.jpg" alt="slide1-2"></a>
+                    <a href="#"><img src="picture/slide1-3.jpg" alt="slide1-3"></a>
+                    <a href="#"><img src="picture/slide1-4.jpg" alt="slide1-4"></a>
+                    <a href="#"><img src="picture/slide1-5.jpg" alt="slide1-5"></a>
+                    <a href="#"><img src="picture/slide1-1.jpg" alt="slide1-1"></a>
+                </div>
+                <div class="tb_slide1slip tb_slide1slipshow1">
+                    <a href="javascript:void(0);" class="tb_slide1sliplf" id="tb_slide1sliplf"><img class="left" src="icon/left1.png" alt="left"></a>
+                    <a href="javascript:void(0);" class="tb_slide1sliprt" id="tb_slide1sliprt"><img class="right" src="icon/right1.png" alt="right"></a>
+                </div>
+                <div class="tb_slide1bot" id="tb_slide1bot">
+                    <ul>
+                        <li onclick="cironclick(event)" class="active"></li>
+                        <li onclick="cironclick(event)"></li>
+                        <li onclick="cironclick(event)"></li>
+                        <li onclick="cironclick(event)"></li>
+                        <li onclick="cironclick(event)"></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tb_md_mdimg1 right">
+                <a href="#">
+                    <img src="picture/tboffice.jpg" alt="office">
+                </a>
+            </div>
+            <div class="tb_md_mdtmall left">
+                <div class="tb_md_mdtmalltop">
+                    <div class="tb_md_mdtmalltopimg left">
+                        <img class="left" src="icon/tmall.png" alt="tmall">
+                        <em class="left">理想生活上天猫</em>
+                        <strong>
+                            <span id="tb_slide2count">1</span>/6
+                        </strong>
+                    </div>
+                    <div class="tb_md_mdtmallbot left">
+                        <ul id="tb_md_mdtmallbot">
+                            <li class="active"></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="tb_slide2" class="tb_slide2" onmouseenter="slide2enter()" onmouseleave="slide2leave()">
+                    <div id="tb_slide2box" class="tb_slide2box" >
+                        <div class="tb_slide2box6 tb_slide2box0">
+                            <a href="javascript:volid(0);"><img class="slide2box6_type1" src="picture/2-6-1.png" alt="2-6-1"></a>
+                            <a href="javascript:volid(0);"><img class="slide2box6_type2" src="picture/2-6-2.jpg" alt="2-6-2"></a>
+                            <a href="javascript:volid(0);"><img class="slide2box6_type2" src="picture/2-6-3.jpg" alt="2-6-3"></a>
+                            <a href="javascript:volid(0);"><img class="slide2box6_type2" src="picture/2-6-4.jpg" alt="2-6-4"></a>
+                            <a href="javascript:volid(0);"><img class="slide2box6_type1" src="picture/2-6-5.png" alt="2-6-5"></a>
+                            <a href="javascript:volid(0);"><img class="slide2box6_type2" src="picture/2-6-6.jpg" alt="2-6-6"></a>
+                            <a href="javascript:volid(0);"><img class="slide2box6_type2" src="picture/2-6-7.jpg" alt="2-6-7"></a>
+                            <a href="javascript:volid(0);"><img class="slide2box6_type1" src="picture/2-6-8.png" alt="2-6-8"></a>
+                            <a href="javascript:volid(0);"><img class="slide2box6_type1" src="picture/2-6-9.png" alt="2-6-9"></a>
+                            <a href="javascript:volid(0);"><img class="slide2box6_type2" src="picture/2-6-10.jpg" alt="2-6-10"></a>
+                            <a href="javascript:volid(0);"><img class="slide2box6_type2" src="picture/2-6-11.jpg" alt="2-6-11"></a>
+                            <a href="javascript:volid(0);"><img class="slide2box6_type2" src="picture/2-6-12.jpg" alt="2-6-12"></a>
+                        </div>
+                        <div class="tb_slide2box1 tb_slide2box0">
+                            <a href="javascript:volid(0);"><img class="slide2box1_type1" src="picture/2-1-1.jpg" alt="2-1-1"></a>
+                            <a href="javascript:volid(0);"><img class="slide2box1_type1" src="picture/2-1-2.jpg" alt="2-1-2"></a>
+                            <a href="javascript:volid(0);"><img class="slide2box1_type1" src="picture/2-1-3.jpg" alt="2-1-3"></a>
+                            <a href="javascript:volid(0);"><img class="slide2box1_type1" src="picture/2-1-4.jpg" alt="2-1-4"></a>
+                        </div>
+                        <div class="tb_slide2box2 tb_slide2box0">
+                            <a href="javascript:volid(0);"><img class="slide2box2_type1" src="picture/2-2-1.jpg" alt="2-2-1"></a>
+                            <a href="javascript:volid(0);"><img class="slide2box2_type1" src="picture/2-2-2.jpg" alt="2-2-2"></a>
+                        </div>
+                        <div class="tb_slide2box3 tb_slide2box0">
+                           <a href="javascript:volid(0);"><img class="slide2box3_type1" src="picture/2-3-1.png" alt="2-1-1"></a>
+                           <a href="javascript:volid(0);"><img class="slide2box3_type2" src="picture/2-3-2.jpg" alt="2-1-2"></a>
+                           <a href="javascript:volid(0);"><img class="slide2box3_type2" src="picture/2-3-3.jpg" alt="2-1-3"></a>
+                           <a href="javascript:volid(0);"><img class="slide2box3_type2" src="picture/2-3-4.jpg" alt="2-1-4"></a>
+                           <a href="javascript:volid(0);"><img class="slide2box3_type2" src="picture/2-3-5.jpg" alt="2-1-5"></a>
+                        </div>
+                        <div class="tb_slide2box4 tb_slide2box0">
+                            <a href="javascript:volid(0);"><img class="slide2box4_type1" src="picture/2-4-1.jpg" alt="2-4-1"></a>
+                            <a href="javascript:volid(0);"><img class="slide2box4_type1" src="picture/2-4-2.jpg" alt="2-4-2"></a>
+                        </div>
+                        <div class="tb_slide2box5 tb_slide2box0">
+                            <a href="javascript:volid(0);"><img class="slide2box1_type1" src="picture/2-5-1.jpg" alt="2-5-1"></a>
+                            <a href="javascript:volid(0);"><img class="slide2box1_type1" src="picture/2-5-2.jpg" alt="2-5-2"></a>
+                            <a href="javascript:volid(0);"><img class="slide2box1_type1" src="picture/2-5-3.jpg" alt="2-5-3"></a>
+                            <a href="javascript:volid(0);"><img class="slide2box1_type1" src="picture/2-5-4.jpg" alt="2-5-4"></a>
+                        </div>
+                        <div class="tb_slide2box6 tb_slide2box0">
+                            <a href="javascript:volid(0);"><img class="slide2box6_type1" src="picture/2-6-1.png" alt="2-6-1"></a>
+                            <a href="javascript:volid(0);"><img class="slide2box6_type2" src="picture/2-6-2.jpg" alt="2-6-2"></a>
+                            <a href="javascript:volid(0);"><img class="slide2box6_type2" src="picture/2-6-3.jpg" alt="2-6-3"></a>
+                            <a href="javascript:volid(0);"><img class="slide2box6_type2" src="picture/2-6-4.jpg" alt="2-6-4"></a>
+                            <a href="javascript:volid(0);"><img class="slide2box6_type1" src="picture/2-6-5.png" alt="2-6-5"></a>
+                            <a href="javascript:volid(0);"><img class="slide2box6_type2" src="picture/2-6-6.jpg" alt="2-6-6"></a>
+                            <a href="javascript:volid(0);"><img class="slide2box6_type2" src="picture/2-6-7.jpg" alt="2-6-7"></a>
+                            <a href="javascript:volid(0);"><img class="slide2box6_type1" src="picture/2-6-8.png" alt="2-6-8"></a>
+                            <a href="javascript:volid(0);"><img class="slide2box6_type1" src="picture/2-6-9.png" alt="2-6-9"></a>
+                            <a href="javascript:volid(0);"><img class="slide2box6_type2" src="picture/2-6-10.jpg" alt="2-6-10"></a>
+                            <a href="javascript:volid(0);"><img class="slide2box6_type2" src="picture/2-6-11.jpg" alt="2-6-11"></a>
+                            <a href="javascript:volid(0);"><img class="slide2box6_type2" src="picture/2-6-12.jpg" alt="2-6-12"></a>
+                        </div>
+                        <div class="tb_slide2box1 tb_slide2box0">
+                            <a href="javascript:volid(0);"><img class="slide2box1_type1" src="picture/2-1-1.jpg" alt="2-1-1"></a>
+                            <a href="javascript:volid(0);"><img class="slide2box1_type1" src="picture/2-1-2.jpg" alt="2-1-2"></a>
+                            <a href="javascript:volid(0);"><img class="slide2box1_type1" src="picture/2-1-3.jpg" alt="2-1-3"></a>
+                            <a href="javascript:volid(0);"><img class="slide2box1_type1" src="picture/2-1-4.jpg" alt="2-1-4"></a>
+                        </div>
+                    </div>
+                    <div class="tb_slide1slip tb_slide1slipshow2">
+                        <a href="javascript:slide2left();" class="tb_slide1sliplf"><img class="left" src="icon/left1.png" alt="left"></a>
+                        <a href="javascript:slide2right();" class="tb_slide1sliprt"><img class="right" src="icon/right1.png" alt="right"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="tb_md_mdimg2 right">
+                <p>今日热卖</p>
+                <a href="#">
+                    <img src="picture/jrrm.jpg" alt="office">
+                </a>
+            </div>
+        </div>
+        <div class="tb_md_rt right">
+            <div class="tb_md_rtlogin">
+                <a class="tb_md_rtloginicon" href="javascript:void(0);"><img src="icon/getAvatar.png" alt="getAvatar.png"></a>
+                <p>Hi!你好</p>
+                <p>
+                    <a class="tb_md_rtlogincoin tb_md_rtloginp" href="javascript:void(0);">领淘金币抵钱</a>
+                    <a class="tb_md_rtloginclub tb_md_rtloginp" href="javascript:void(0);">会员俱乐部</a>
+                </p>
+                <ul>
+                    <li><a href="javascript:void(0);">登录</a></li>
+                    <li><a href="javascript:void(0);">注册</a></li>
+                    <li><a href="javascript:void(0);">开店</a></li>
+                </ul>
+            </div>
+            <div class="tb_md_rtreport">
+                <a href="javascript:void(0);">网上有害信息举报专区</a><span></span>
+            </div>
+            <div class="tb_md_rtnotice">
+                <ul class="tb_md_rtnoticetop" id="tb_md_rtnoticetop">
+                    <li index="1" class="active"><a href="javascript:void(0);">公告</a></li>
+                    <li index="2"><a href="javascript:void(0);">规则</a></li>
+                    <li index="3"><a href="javascript:void(0);">论坛</a></li>
+                    <li index="4"><a href="javascript:void(0);">安全</a></li>
+                    <li index="5"><a href="javascript:void(0);">公益</a></li>
+                </ul>
+                <div class="tb_md_rtnoticebot" id="tb_md_rtnoticebot">
+                    <ul class="show ">
+                        <li><a class="active" href="javascript:void(0);">阿里大进口战略 全球设采购中心落实原产地溯源</a></li>
+                        <li><a href="javascript:void(0);"> 天猫一小时达铺向全国</a></li>
+                        <li><a href="javascript:void(0);">天猫新零售赋能时装周</a></li>
+                    </ul>
+                    <ul class="hide ">
+                        <li><a class="" href="javascript:void(0);">《阿里创作平台管理规范（“微淘号·达人”适用）》变更公示通知</a></li>
+                        <li><a href="javascript:void(0);"> 《淘宝网数字娱乐市场须提供官方授权的商品目录》</a></li>
+                        <li><a href="javascript:void(0);">《淘宝网大家电须通过供销平台建立代销模式的指定品牌》</a></li>
+                        <li><a href="javascript:void(0);">《飞猪旅行集市用车相关管理规定变更公示通知》</a></li>
+                    </ul>
+                    <ul class="hide ">
+                        <li><a class="" href="javascript:void(0);">40天小白变设计师</a></li>
+                        <li><a href="javascript:void(0);"> 知识产权侵权问题</a></li>
+                        <li><a href="javascript:void(0);">创意营销一站解决</a></li>
+                        <li><a href="javascript:void(0);">2018年消费者趋势</a></li>
+                    </ul>
+                    <ul class="hide ">
+                        <li><a class="active" href="javascript:void(0);">公益“护苗”行动招募</a></li>
+                        <li><a class="active" href="javascript:void(0);"> 你愿意加入我们吗？</a></li>
+                        <li><a href="javascript:void(0);">卖家注意：风险通报！</a></li>
+                        <li><a href="javascript:void(0);">售假获刑又起诉！</a></li>
+                    </ul>
+                    <ul class="hide ">
+                        <li><a class="active" href="javascript:void(0);">九寨沟地震紧急救援</a></li>
+                        <li><a class="active" href="javascript:void(0);"> 公益宝贝卖家准入公告</a></li>
+                        <li><a href="javascript:void(0);">致百万商家的感谢信</a></li>
+                        <li><a href="javascript:void(0);">公益宝贝卖家发票索取</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tb_md_rtconve clear">
+                <ul  class="tb_md_rtconve">
+                    <li class="active phone clc" index="0"><a href="javascript:void(0);"><span class="conve1"></span><p>充话费</p></a></li>
+                    <li class="active travel clc" index="1"><a href="javascript:void(0);"><span class="conve2"></span><p>旅行</p></a></li>
+                    <li class="car clc" index="2"><a href="javascript:void(0);"><span class="conve3"></span><p>车险</p></a></li>
+                    <li><a href="javascript:void(0);"><span class="conve4"></span><p>游戏</p></a></li>
+                    <li class="active" ><a href="javascript:void(0);"><span class="conve5"></span><p>彩票</p></a></li>
+                    <li class="active" ><a href="javascript:void(0);"><span class="conve6"></span><p>电影</p></a></li>
+                    <li><a href="javascript:void(0);"><span class="conve7"></span><p>酒店</p></a></li>
+                    <li><a href="javascript:void(0);"><span class="conve8"></span><p>理财</p></a></li>
+                    <li class="active"><a href="javascript:void(0);"><span class="conve9"></span><p>找服务</p></a></li>
+                    <li class="active"><a href="javascript:void(0);"><span class="conve10"></span><p>演出</p></a></li>
+                    <li><a href="javascript:void(0);"><span class="conve11"></span><p>水电煤</p></a></li>
+                    <li><a href="javascript:void(0);"><span class="conve12"></span><p>火车票</p></a></li>
+                </ul>
+                <div class="conve_contianer " style="display: none" id="conve_contianer">
+                    <div class="conve_close" id="conve_close"><img src="icon/close1.png" alt="close"></div>
+                    <div class="conve_com">
+                        <div class="contianer_nav" id="contianer_nav">
+                            <a index="1" href="javascript:void(0);">充话费</a>
+                            <a index="2" href="javascript:void(0);">充流量</a>
+                            <a index="3" href="javascript:void(0);">充固话</a>
+                            <a index="4" href="javascript:void(0);">充宽带</a>
+                        </div>
+                        <div class="contianerbox" id="contianerbox">
+                            <div class="left conve_slide phonefare ">
+                                <div class="conve_input left">
+                                    <input type="tel" placeholder="请输入手机号码" ><span></span>
+                                </div>
+                                <div class="conve_input left" id="phonefareinput">
+                                    <input id="fareprice" type="text" disabled value="50元" ><span id=""></span>
+                                </div>
+                                <div class="conve_drop" id="phonefareprice" style="display: none">
+                                    <ul>
+                                        <li index="0" ><em>100</em>元</li>
+                                        <li index="1"><em>10</em>元</li>
+                                        <li index="2"><em>200</em>元</li>
+                                        <li index="3"><em>20</em>元</li>
+                                        <li index="4"><em>300</em>元</li>
+                                        <li index="5"><em>30</em>元</li>
+                                        <li index="6"><em>500</em>元</li>
+                                        <li index="7" class="seleted"><em>50</em>元</li>
+                                        <li index="8"><em>1000</em>元</li>
+                                    </ul>
+                                </div>
+                                <div class="conve_slideprice" >
+                                    <div class="conve_slideword">售价</div>
+                                <div class="conve_slidepricenum" id="conve_slidepricenum">
+                                    <span>¥</span>
+                                    <strong id="depositsale">49-49.8</strong>
+                                </div>
+                                </div>
+                                <div class="conve_slidebut"><a href="javascript:void(0);">立即充值</a></div>
+                        </div>
+                            <div class="left conve_slide phoneflow">
+                                <div class="conve_input left clear">
+                                    <input type="tel" placeholder="请输入手机号码" ><span></span>
+                                </div>
+                                <div class="phoneflow2 left">
+                                    <div class="conve_input left phoneflowclass" id="flowareabox">
+                                        <input id="flowareainput" class="flowinput" type="text" disabled value="本地流量"><span id="flowareaspan"></span>
+                                    </div>
+                                    <div class=" conve_drop" id="flowarea" style="display:none">
+                                        <ul>
+                                            <li index="0" class="seleted">本地流量</li>
+                                            <li index="1">全国流量</li>
+                                        </ul>
+                                    </div>
+                                    <div class="conve_input left phoneflowclass" id="flowquantitybox">
+                                        <input id="flowquantityinput" class="flowinput" type="text" disabled value="300M"><span id="flowquantityspan"></span>
+                                    </div>
+                                    <div class="flowquantity  conve_drop" id="flowquantity" style="display:none">
+                                        <ul>
+                                            <li index="0" class="selected">50M</li>
+                                            <li index="1">100M</li>
+                                            <li index="2">200M</li>
+                                            <li index="3" class="seleted">300M</li>
+                                            <li index="4">500M</li>
+                                            <li index="5">1000M</li>
+                                            <li index="6">2000M</li>
+                                        </ul>
+                                    </div>
+                                    <div class=" flowdetail" id="flowdetail">详情</div>
+                                    <div class="flowcontain" id="flowcontain">
+                                        <p>本地流量：流量只能在号码所属省份使用（即时生效，当月有效）</p>
+                                        <p>全国流量：流量可以在全国使用（即时生效，当月有效）</p>
+                                    </div>
+                                </div>
+
+                                <div class="conve_slideprice" >
+                                    <div class="conve_slideword">售价</div>
+                                    <div class="conve_slidepricenum" id="conve_slidepricenum">
+                                        <span>¥</span>
+                                        <strong id="flowsale">19</strong>
+                                    </div>
+                                </div>
+                                <div class="conve_slidebut"><a href="javascript:void(0);">立即充值</a></div>
+                            </div>
+                            <div class="left conve_slide telefare ">
+                                <div class="telefareradio">
+                                    <input type="radio" name="operator" value="电信" checked>电信
+                                    <input type="radio" name="operator" value="联通">联通</div>
+                                <div class="conve_input left telefareinput">
+                                    <input class="left" type="text" placeholder="区号" maxlength="4" >
+                                    <em class="left">-</em>
+                                    <input class="left" type="tel" placeholder="号码(不支持小灵通)" ><span></span>
+                                </div>
+                                <div class="conve_input left" id="telefareinput">
+                                    <input id="teledeposit" type="text" disabled value="50元" ><span id="telefarespan"></span>
+                                </div>
+                                <div class="conve_drop telefaredrop" id="telefaredrop" style="display:none ">
+                                    <ul>
+                                        <li index="0" ><em>100</em>元</li>
+                                        <li index="1"><em>10</em>元</li>
+                                        <li index="2"><em>200</em>元</li>
+                                        <li index="3"><em>20</em>元</li>
+                                        <li index="4"><em>300</em>元</li>
+                                        <li index="5"><em>30</em>元</li>
+                                        <li index="6"><em>500</em>元</li>
+                                        <li index="7" class="seleted"><em>50</em>元</li>
+                                        <li index="8"><em>1000</em>元</li>
+                                    </ul>
+                                </div>
+
+
+                                <div class="left telesubmit">
+                                    <div class="conve_slidebut telefarebut "><a href="javascript:void(0);">立即充值</a>
+                                    </div>
+                                    <div class="conve_slideprice ">
+                                        <div class="conve_slideword">售价</div>
+                                        <div class="conve_slidepricenum" id="">
+                                            <span>¥</span>
+                                            <strong id="teleprice">49-49.8</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="left conve_slide bbfare ">
+                                <div class="conve_input left" id="">
+                                    <input id="" type="text" disabled value="电信/城市" ><span id=""></span>
+                                </div>
+                                <div class="conve_input left">
+                                    <input type="tel" placeholder="请输入宽带账号" ><span></span>
+                                </div>
+                                <div class="conve_input left" id="bbdiv">
+                                    <input id="bbdeposit" type="text" disabled value="50元" ><span id="bbspan"></span>
+                                </div>
+                                <div class="conve_drop" id="bbdrop" style="display:none">
+                                    <ul>
+                                        <li index="0" ><em>100</em>元</li>
+                                        <li index="1"><em>10</em>元</li>
+                                        <li index="2"><em>200</em>元</li>
+                                        <li index="3"><em>20</em>元</li>
+                                        <li index="4"><em>300</em>元</li>
+                                        <li index="5"><em>30</em>元</li>
+                                        <li index="6"><em>500</em>元</li>
+                                        <li index="7" class="seleted"><em>50</em>元</li>
+                                        <li index="8"><em>1000</em>元</li>
+                                    </ul>
+                                </div>
+                                <div class=" flowdetail bbquest" id="bbquest"></div>
+                                <div class="flowcontain bbquestcontain" id="bbquestcontain">
+                                    <p>联通宽带账号格式：7-8位纯数字</p>
+                                    <p>电信宽带账号格式：</p><br>
+                                    <p>手机号</p><br>
+                                    <p>区号+固话号码</p><br>
+                                    <p>字母+数字</p><br>
+                                    <p>您还可以拨打电信10000或联通10010号来确认您的宽带帐号</p>
+                                </div>
+                                <div class="left telesubmit">
+                                    <div class="conve_slidebut telefarebut "><a href="javascript:void(0);">立即充值</a>
+                                    </div>
+                                    <div class="conve_slideprice ">
+                                        <div class="conve_slideword">售价</div>
+                                        <div class="conve_slidepricenum" id="">
+                                            <span>¥</span>
+                                            <strong id="bbprice">49-49.8</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="conve_contianer " style="display: none" id="trip_contianer">
+                    <div class="conve_close" id="trip_close"><img src="icon/close1.png" alt="close"></div>
+                    <div class="conve_com trip">
+                        <div class="contianer_nav trip_nav" id="trip_nava">
+                            <a index="1" href="javascript:void(0);">国内机票</a>
+                            <a index="2" href="javascript:void(0);">国际机票</a>
+                            <a index="3" href="javascript:void(0);">酒店客栈</a>
+                            <a index="4" href="javascript:void(0);">度假门票</a>
+                            <a index="5" href="javascript:void(0);">火车票</a>
+                        </div>
+                        <div class="contianerbox" id="trip_contianerbox">
+                            <div class="left conve_slide ">
+                                <form action="" class="clear">
+                                    <div class="telefareradio">
+                                        <input type="radio" id="trip_onew" name="radio1" value="单程" checked>
+                                        <label for="trip_onew">单程</label>
+                                        <input type="radio" id="trip_return" name="radio1" value="往返">
+                                        <label for="trip_return">往返</label>
+                                    </div>
+                                    <div class="conve_input left trip_input">
+                                        <label class="trip_label" for="triphome_city">出发</label>
+                                        <input id="triphome_city" type="text" placeholder="城市"><span></span>
+                                    </div>
+                                    <div class="conve_input left trip_input" id="">
+                                        <label class="trip_label" for="triphome_date">出发</label>
+                                        <input id="triphome_date" type="text" placeholder="城市" ><span id=""></span>
+                                    </div>
+                                    <em id="trip_em">go</em>
+                                    <i>港澳台请选择国际机票</i>
+                                    <div class="conve_input left trip_input">
+                                        <label class="trip_label" for="triphome_city">出发</label>
+                                        <input id="triphome_city2" type="text" placeholder="日期"><span class="date_span"></span>
+                                    </div>
+                                    <div class="conve_input left trip_input" id="trip_inputhomedate" style="display:none">
+                                        <label class="trip_label" for="triphome_date">出发</label>
+                                        <input id="" type="text" placeholder="日期" ><span class="date_span" id=""></span>
+                                    </div>
+                                    <div class="conve_slidebut clear"><a href="javascript:void(0);">查找</a></div>
+                                </form>
+                            </div>
+                            <div class="left conve_slide ">
+                                <form action="" class="clear">
+                                    <div class="telefareradio">
+                                        <input type="radio" id="" name="radio2" value="单程" checked>
+                                        <label for="trip_onew">单程</label>
+                                        <input type="radio" id="" name="radio2" value="往返">
+                                        <label for="trip_return">往返</label>
+                                    </div>
+                                    <div class="conve_input left trip_input">
+                                        <label class="trip_label" for="triphome_city">出发</label>
+                                        <input id="" type="text" placeholder="城市"><span></span>
+                                    </div>
+                                    <div class="conve_input left trip_input" id="">
+                                        <label class="trip_label" for="triphome_date">出发</label>
+                                        <input id="" type="text" placeholder="城市" ><span id=""></span>
+                                    </div>
+                                    <em id="trip_em">go</em>
+                                    <i>港澳台请选择国际机票</i>
+                                    <div class="conve_input left trip_input">
+                                        <label class="trip_label" for="triphome_city">出发</label>
+                                        <input id="" type="text" placeholder="日期"><span class="date_span"></span>
+                                    </div>
+                                    <div class="conve_input left trip_input" id="" style="display:none">
+                                        <label class="trip_label" for="triphome_date">出发</label>
+                                        <input id="" type="text" placeholder="日期" ><span class="date_span" id=""></span>
+                                    </div>
+                                    <div class="conve_slidebut clear"><a href="javascript:void(0);">查找</a></div>
+                                </form>
+                            </div>
+                            <div class="left conve_slide ">
+                                <form action="" class="clear">
+                                    <div class="telefareradio">
+                                        <input type="radio" id="" name="radio3" value="单程" checked>
+                                        <label for="trip_onew">单程</label>
+                                        <input type="radio" id="" name="radio3" value="往返">
+                                        <label for="trip_return">往返</label>
+                                    </div>
+                                    <div class="conve_input left trip_input">
+                                        <label class="trip_label" for="triphome_city">出发</label>
+                                        <input id="" type="text" placeholder="城市"><span></span>
+                                    </div>
+                                    <div class="conve_input left trip_input" id="">
+                                        <label class="trip_label" for="triphome_date">出发</label>
+                                        <input id="" type="text" placeholder="城市" ><span id=""></span>
+                                    </div>
+                                    <em id="trip_em">go</em>
+                                    <i>港澳台请选择国际机票</i>
+                                    <div class="conve_input left trip_input">
+                                        <label class="trip_label" for="triphome_city">出发</label>
+                                        <input id="" type="text" placeholder="日期"><span class="date_span"></span>
+                                    </div>
+                                    <div class="conve_input left trip_input" id="" style="display:none">
+                                        <label class="trip_label" for="triphome_date">出发</label>
+                                        <input id="" type="text" placeholder="日期" ><span class="date_span" id=""></span>
+                                    </div>
+                                    <div class="conve_slidebut clear"><a href="javascript:void(0);">查找</a></div>
+                                </form>
+                            </div>
+                            <div class="left conve_slide ">
+                                <form action="" class="clear">
+                                    <div class="telefareradio">
+                                        <input type="radio" id="" name="radio2" value="单程" checked>
+                                        <label for="trip_onew">单程</label>
+                                        <input type="radio" id="" name="radio2" value="往返">
+                                        <label for="trip_return">往返</label>
+                                    </div>
+                                    <div class="conve_input left trip_input">
+                                        <label class="trip_label" for="triphome_city">出发</label>
+                                        <input id="" type="text" placeholder="城市"><span></span>
+                                    </div>
+                                    <div class="conve_input left trip_input" id="">
+                                        <label class="trip_label" for="triphome_date">出发</label>
+                                        <input id="" type="text" placeholder="城市" ><span id=""></span>
+                                    </div>
+                                    <em id="trip_em">go</em>
+                                    <i>港澳台请选择国际机票</i>
+                                    <div class="conve_input left trip_input">
+                                        <label class="trip_label" for="triphome_city">出发</label>
+                                        <input id="" type="text" placeholder="日期"><span class="date_span"></span>
+                                    </div>
+                                    <div class="conve_input left trip_input" id="" style="display:none">
+                                        <label class="trip_label" for="triphome_date">出发</label>
+                                        <input id="" type="text" placeholder="日期" ><span class="date_span" id=""></span>
+                                    </div>
+                                    <div class="conve_slidebut clear"><a href="javascript:void(0);">查找</a></div>
+                                </form>
+                            </div>
+                            <div class="left conve_slide ">
+                                <form action="" class="clear">
+                                    <div class="telefareradio">
+                                        <input type="radio" id="" name="radio2" value="单程" checked>
+                                        <label for="trip_onew">单程</label>
+                                        <input type="radio" id="" name="radio2" value="往返">
+                                        <label for="trip_return">往返</label>
+                                    </div>
+                                    <div class="conve_input left trip_input">
+                                        <label class="trip_label" for="triphome_city">出发</label>
+                                        <input id="" type="text" placeholder="城市"><span></span>
+                                    </div>
+                                    <div class="conve_input left trip_input" id="">
+                                        <label class="trip_label" for="triphome_date">出发</label>
+                                        <input id="" type="text" placeholder="城市" ><span id=""></span>
+                                    </div>
+                                    <em id="trip_em">go</em>
+                                    <i>港澳台请选择国际机票</i>
+                                    <div class="conve_input left trip_input">
+                                        <label class="trip_label" for="triphome_city">出发</label>
+                                        <input id="" type="text" placeholder="日期"><span class="date_span"></span>
+                                    </div>
+                                    <div class="conve_input left trip_input" id="" style="display:none">
+                                        <label class="trip_label" for="triphome_date">出发</label>
+                                        <input id="" type="text" placeholder="日期" ><span class="date_span" id=""></span>
+                                    </div>
+                                    <div class="conve_slidebut clear"><a href="javascript:void(0);">查找</a></div>
+                                </form>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="conve_contianer " style="display: none" id="car_contianer">
+                    <div class="conve_close" id="car_close"><img src="icon/close1.png" alt="close"></div>
+                    <div class="conve_com trip">
+                        <div class="contianer_nav trip_nav" id="car_nava">
+                            <a index="1" href="javascript:void(0);">车险</a>
+                            <a index="2" href="javascript:void(0);">意外险</a>
+                            <a index="3" href="javascript:void(0);">健康险</a>
+                            <a index="4" href="javascript:void(0);">旅行险</a>
+                            <a index="5" href="javascript:void(0);">财产险</a>
+                        </div>
+                        <div class="contianerbox" id="trip_contianerbox">
+                            <div class="left conve_slide ">
+                                <form action="" class="clear">
+
+                                    <div class="conve_input left car_input">
+                                        <label class="trip_label" for="triphome_city">热门城市</label>
+                                        <input id="triphome_city" type="text" placeholder="请选择城市"><span></span>
+                                    </div>
+                                    <div class="conve_input left car_input" id="">
+                                        <label class="trip_label" for="triphome_date">保险公司</label>
+                                        <input id="triphome_date" type="text" placeholder="人车保险" ><span id=""></span>
+                                    </div>
+                                    <div class="conve_slidebut clear"><a href="javascript:void(0);">立刻报价</a></div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="tb_md_rtbot">
+                <h3>阿里APP <a href="javascript:void(0);">更多></a></h3>
+                <ul>
+                    <li><a href="javascript:void(0);"><img src="icon/nav_tb.jpg" alt="tb"></a><div class="app_qr"><img src="icon/navQR_tb.jpg" alt="QR_tb"><p>扫一扫淘宝</p></div></li>
+                    <li><a href="javascript:void(0);"><img src="icon/nav_tm.jpg" alt="tm"></a><div class="app_qr"><img src="icon/navQR_tm.jpg" alt="QR_tm"><p>扫一扫天猫</p></div></li>
+                    <li><a href="javascript:void(0);"><img src="icon/nav_jhs.jpg" alt="jhs"></a><div class="app_qr"><img src="icon/navQR_jhs.jpg" alt="QR_jhs"><p>扫一扫聚划算</p></div></li>
+                    <li><a href="javascript:void(0);"><img src="icon/nav_zfb.jpg" alt="zfb"></a><div class="app_qr"><img src="icon/navQR_zfb.jpg" alt="QR_zfb"><p>扫一扫支付宝</p></div></li>
+                    <li><a href="javascript:void(0);"><img src="icon/nav_alww.jpg" alt="alww"></a><div class="app_qr"><img src="icon/navQR_ww.jpg" alt="QR_ww"><p>扫一扫旺旺</p></div></li>
+                    <li><a href="javascript:void(0);"><img src="icon/nav_xy.jpg" alt="xy"></a><div class="app_qr"><img src="icon/navQR_xy.jpg" alt="QR_xy"><p>扫一扫咸鱼</p></div></li>
+                    <li><a href="javascript:void(0);"><img src="icon/nav_yk.jpg" alt="yk"></a><div class="app_qr"><img src="icon/navQR_yk.jpg" alt="QR_yk"><p>扫一扫优酷</p></div></li>
+                    <li><a href="javascript:void(0);"><img src="icon/nav_fz.jpg" alt="fz"></a><div class="app_qr"><img src="icon/navQR_fz.jpg" alt="QR_fz"><p>扫一扫飞猪</p></div></li>
+                    <li><a href="javascript:void(0);"><img src="icon/nav_mycf.jpg" alt="mycf"></a><div class="app_qr"><img src="icon/navQR_mycf.jpg" alt="QR_mycf"><p>扫一扫蚂蚁财富</p></div></li>
+                    <li><a href="javascript:void(0);"><img src="icon/nav_tpp.jpg" alt="tpp"></a><div class="app_qr"><img src="icon/navQR_tpp.jpg" alt="QR_tpp"><p>扫一扫淘票票</p></div></li>
+                </ul>
+            </div>
+        </div>
+        <div class="tb_md_bot left">
+            <div class="tb_md_bottbtt">
+                <h3 class="left">
+                    <p>让你的生活更有趣</p>
+                </h3>
+                <div class="tb_slide3" id="tb_slide3">
+                    <a class="tb_slide3more" href="javascript:void(0);">更多></a>
+                    <div class="tb_slide3box" id="tb_slide3box">
+                        <a href="javascript:void(0);"><img src="picture/3-2.jpg" alt="3-2">
+                            <h4>回南天，它来满足你的“不湿”之需</h4>
+                            <p>春天一到，最烦人的回南天就要来了。潮湿的内衣内裤，开始发臭的衣服，真的让人很崩溃。恩博却没有这种烦恼，因为我有智能干衣架。</p>
+                        </a>
+                        <a href="javascript:void(0);"><img src="picture/3-3.jpg" alt="3-3">
+                            <h4>不节食不用动，减肥必杀技原来是这样……</h4>
+                            <p>一白遮百丑，一胖毁所有?  我就呵呵了！</p>
+                        </a>
+                        <a href="javascript:void(0);"><img src="picture/3-1.jpg" alt="3-1">
+                            <h4>人体模型工厂：白骨遍地，工人从不上夜班</h4>
+                            <p>实拍人体模型工厂：遍地“白骨”“心肝”，老板从不让工人上夜班</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tb_shyjs left">
+            <h3 class="">
+                <a class="left" href="javascript:void(0);"><img src="icon/shyjs.png" alt="shyjs"></a>
+                <p>发现属于你的生活方式</p>
+            </h3>
+            <ul class="tb_shyjsul left">
+                <li>
+                    <a href="javascript:void(0);">
+                    <div class="tb_shyjsimg left"><img src="icon/tb_shyjs_thxdj.jpg" alt="thxdj"></div>
+                    <div class="tb_shyjsright">
+                        <h4>囤货小当家</h4>
+                        <p>会囤会生活</p>
+                        <p><i><img src="icon/like.png" alt="like"></i>人气653558
+                        </p>
+                    </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">
+                        <div class="tb_shyjsimg left"><img src="icon/tb_shyjs_nsf.jpg" alt="nsf"></div>
+                        <div class="tb_shyjsright">
+                            <h4>女神范</h4>
+                            <p>就是要你好看</p>
+                            <p>
+                                <i><img src="icon/like.png" alt="like"></i>人气4001975
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">
+                        <div class="tb_shyjsimg left"><img src="icon/tb_shyjs_chdhy.jpg" alt="chdhy"></div>
+                        <div class="tb_shyjsright">
+                            <h4>吃货的后裔</h4>
+                            <p>翻滚吧美食君</p>
+                            <p><i><img src="icon/like.png" alt="like"></i>人气679477
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">
+                        <div class="tb_shyjsimg left"><img src="icon/tb_shyjs_gzfsy.jpg" alt="gzfsy"></div>
+                        <div class="tb_shyjsright">
+                            <h4>改装发烧友</h4>
+                            <p>不改装我会疯</p>
+                            <p><i><img src="icon/like.png" alt="like"></i>人气347706
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">
+                        <div class="tb_shyjsimg left"><img src="icon/tb_shyjs_jymw.jpg" alt="jymw"></div>
+                        <div class="tb_shyjsright">
+                            <h4>家有萌娃</h4>
+                            <p>宝贝快快长大</p>
+                            <p><i><img src="icon/like.png" alt="like"></i>人气1853336
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">
+                        <div class="tb_shyjsimg left"><img src="icon/tb_shyjs_xkjkk.jpg" alt="xkjkk"></div>
+                        <div class="tb_shyjsright">
+                            <h4>炫酷极客控</h4>
+                            <p>黑科技发掘地</p>
+                            <p><i><img src="icon/like.png" alt="like"></i>人气285970
+                            </p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="tb_yhhagj floatnav left" id="floatnav1" >
+        <div class="tb_yhhagjcom left">
+            <h3>
+                <img class="left" src="icon/tb_yhh.png" alt="yhh">
+                <p>
+                        <span class="tb_yhhagjQRc">
+                            <span><img src="icon/tb_yhhagjQRc.png " alt="二维码"></span>
+                            <span class="tb_yhhagjQRcbox">
+                                <img src="icon/tb_yhhQRc.png" alt="yhhQRc">
+                                <em>手机淘宝扫码</em>
+                            </span>
+                        </span>
+                    <span>与品质生活不期而遇</span>
+                    <span class="tb_yhhagjrt">换一换</span>
+                </p>
+            </h3>
+            <div class="tb_yhhbox">
+                <a href="javascript:void(0);">
+                    <div class="tb_yhhboximg left"><img class="left" src="icon/tb_yhhimg1.jpg" alt="yhhimg1"></div>
+                    <div class="tb_yhhinfo left">
+                        <h4>CELINE Tri-Fold翅膀包</h4>
+                        <p>两侧的包带看起来惬意又灵动。</p>
+                        <p class="extra"><span><img src="icon/smile.png" alt="smile"></span>6 人说好</p>
+                    </div>
+                </a>
+                <a href="javascript:void(0);">
+                    <div class="tb_yhhboximg left"><img class="left" src="icon/tb_yhhimg2.jpg" alt="yhhimg2"></div>
+                    <div class="tb_yhhinfo left">
+                        <h4>修身条纹polo衫</h4>
+                        <p>条纹元素装饰衣身，经典翻领修饰脖颈。。</p>
+                        <p class="extra"><span><img src="icon/smile.png" alt="smile"></span>1 人说好</p>
+                    </div>
+                </a>
+                <a href="javascript:void(0);">
+                    <div class="tb_yhhboximg left"><img class="left" src="icon/tb_yhhimg3.jpg" alt="yhhimg3"></div>
+                    <div class="tb_yhhinfo left">
+                        <h4>Josefinas 女士手提包</h4>
+                        <p>平滑细腻的皮革材质，带来高质感享受。。</p>
+                        <p class="extra"><span><img src="icon/smile.png" alt="smile"></span>19 人说好</p>
+                    </div>
+                </a>
+                <a href="javascript:void(0);">
+                    <div class="tb_yhhboximg left"><img class="left" src="icon/tb_yhhimg4.jpg" alt="yhhimg4"></div>
+                    <div class="tb_yhhinfo left">
+                        <h4>Boden星星装饰卫衣</h4>
+                        <p>个性十足的星星图案，经典大方的连帽款式，尽显少年独有的活泼。。</p>
+                        <p class="extra"><span><img src="icon/smile.png" alt="smile"></span>10 人说好</p>
+                    </div>
+                </a>
+                <a href="javascript:void(0);">
+                    <div class="tb_yhhboximg left"><img class="left" src="icon/tb_yhhimg5.jpg" alt="yhhimg5"></div>
+                    <div class="tb_yhhinfo left">
+                        <h4>Bottegaveneta男包</h4>
+                        <p>经典象牙白色渲染辅以格纹凹凸图案，个性酷帅不失典雅感。。</p>
+                        <p class="extra"><span><img src="icon/smile.png" alt="smile"></span>9 人说好</p>
+                    </div>
+                </a>
+                <a href="javascript:void(0);">
+                    <div class="tb_yhhboximg left"><img class="left" src="icon/tb_yhhimg1.jpg" alt="yhhimg1"></div>
+                    <div class="tb_yhhinfo left">
+                        <h4>Balenciaga 不规则撞色牛仔裤</h4>
+                        <p>牛仔裤加以晕染效果的撞色处理十足个性。。</p>
+                        <p class="extra"><span><img src="icon/smile.png" alt="smile"></span>4 人说好</p>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+        <div class="tb_yhhagjcom right">
+            <h3>
+                <img class="left" src="icon/tb_agj.png" alt="yhh">
+                <p>
+                    <span>献给聪明可爱的你</span>
+                    <span class="tb_yhhagjrt">更多></span>
+                </p>
+            </h3>
+            <div class="tb_yhhbox">
+                <a href="javascript:void(0);">
+                    <div class="tb_yhhboximg left"><img class="left" src="icon/tb_agjimg1.jpg" alt="agjimg1"></div>
+                    <div class="tb_yhhinfo tb_agjinfo left">
+                        <p>卡通小熊创意墙面收纳袋挂袋门后储物袋布艺单袋双袋多袋杂物整理</p>
+                        <p class="extra"><span><img src="icon/tb_agjuser1.jpg" alt="user1"></span>放飞自我的兔小姐</p>
+                    </div>
+                </a>
+                <a href="javascript:void(0);">
+                    <div class="tb_yhhboximg left"><img class="left" src="icon/tb_agjimg2.jpg" alt="agjimg2"></div>
+                    <div class="tb_yhhinfo tb_agjinfo left">
+                        <p>北欧单人沙发椅布艺单人椅美式实木单人沙发椅现代简约休闲老虎椅</p>
+                        <p class="extra"><span><img src="icon/tb_agjuser2.jpg" alt="user2"></span>爱逛***01</p>
+                    </div>
+                </a>
+                <a href="javascript:void(0);">
+                    <div class="tb_yhhboximg left"><img class="left" src="icon/tb_agjimg3.jpg" alt="agjimg3"></div>
+                    <div class="tb_yhhinfo tb_agjinfo left">
+                        <p>狼蛛弑魂专业游戏鼠标 LOL网吧电脑电竞滑鼠有线机械鼠标发光USB</p>
+                        <p class="extra"><span><img src="icon/tb_agjuser3.jpg" alt="user3"></span>潮范时光机</p>
+                    </div>
+                </a>
+                <a href="javascript:void(0);">
+                    <div class="tb_yhhboximg left"><img class="left" src="icon/tb_agjimg4.jpg" alt="agjimg4"></div>
+                    <div class="tb_yhhinfo tb_agjinfo left">
+                        <p>秦艺整套黑檀实木茶盘小号汝窑紫砂功夫茶具套装一壶四杯家用茶台</p>
+                        <p class="extra"><span><img src="icon/tb_agjuser3.jpg" alt="user3"></span>潮范时光机</p>
+                    </div>
+                </a>
+                <a href="javascript:void(0);">
+                    <div class="tb_yhhboximg left"><img class="left" src="icon/tb_agjimg5.jpg" alt="agjimg5"></div>
+                    <div class="tb_yhhinfo tb_agjinfo left">
+                        <p>美式双人床婚床实木1.8米主卧床奢华真皮床欧式雕花床别墅四柱床</p>
+                        <p class="extra"><span><img src="icon/tb_agjuser1.jpg" alt="user1"></span>放飞自我的兔小姐</p>
+                    </div>
+                </a>
+                <a href="javascript:void(0);">
+                    <div class="tb_yhhboximg left"><img class="left" src="icon/tb_agjimg6.jpg" alt="agjimg6"></div>
+                    <div class="tb_yhhinfo tb_agjinfo left">
+                        <p>北欧冷色新三层橡木实木地暖地板/大锁扣防水封蜡15mm厚德国订单</p>
+                        <p class="extra"><span><img src="icon/tb_agjuser1.jpg" alt="user1"></span>放飞自我的兔小姐</p>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </div>
+        <div class="tb_mrhdtbzb floatnav left" id="floatnav2">
+            <div class="tb_yhhagjcom left">
+            <h3>
+                <img class="left" src="icon/tb_mrhd.png" alt="mrhd">
+                <p>
+                    <span>发现深藏的好店</span>
+                    <span class="tb_yhhagjrt">更多></span>
+                </p>
+            </h3>
+            <div class="tb_yhhbox tb_ymrhdbox">
+                <a href="javascript:void(0);">
+                    <div class="tb_mrhdinfo left">
+                        <h4>今日推荐</h4>
+                        <p>暂无店铺评价</p>
+                    </div>
+                    <div class="tb_mrhdboximg left">
+                        <div class="tb_mrhdimg left"><img class="left" src="icon/tb_mrhdimg1-1.jpg" alt="mrhdimg1-1"></div>
+                        <div class="tb_mrhdimg left"><img class="left" src="icon/tb_mrhdimg1-2.jpg" alt="mrhdimg1-2"></div>
+                        <div class="tb_mrhdimg left"><img class="left" src="icon/tb_mrhdimg1-3.jpg" alt="mrhdimg1-3"></div>
+                    </div>
+                </a>
+                <a href="javascript:void(0);">
+                    <div class="tb_mrhdinfo left">
+                        <h4>包包控</h4>
+                        <p>暂无店铺评价</p>
+                    </div>
+                    <div class="tb_mrhdboximg left">
+                        <div class="tb_mrhdimg left"><img class="left" src="icon/tb_mrhdimg2-1.jpg" alt="mrhdimg2-1"></div>
+                        <div class="tb_mrhdimg left"><img class="left" src="icon/tb_mrhdimg2-2.jpg" alt="mrhdimg2-2"></div>
+                        <div class="tb_mrhdimg left"><img class="left" src="icon/tb_mrhdimg2-3.jpg" alt="mrhdimg2-3"></div>
+                    </div>
+                </a>
+                <a href="javascript:void(0);">
+                    <div class="tb_mrhdinfo left">
+                        <h4>推荐栏目</h4>
+                        <p>暂无店铺评价</p>
+                    </div>
+                    <div class="tb_mrhdboximg left">
+                        <div class="tb_mrhdimg left"><img class="left" src="icon/tb_mrhdimg3-1.jpg" alt="mrhdimg3-1"></div>
+                        <div class="tb_mrhdimg left"><img class="left" src="icon/tb_mrhdimg3-2.jpg" alt="mrhdimg3-2"></div>
+                        <div class="tb_mrhdimg left"><img class="left" src="icon/tb_mrhdimg3-3.jpg" alt="mrhdimg3-3"></div>
+                    </div>
+                </a>
+                <a href="javascript:void(0);">
+                    <div class="tb_mrhdinfo left">
+                        <h4>吃吃吃</h4>
+                        <p>暂无店铺评价</p>
+                    </div>
+                    <div class="tb_mrhdboximg left">
+                        <div class="tb_mrhdimg left"><img class="left" src="icon/tb_mrhdimg4-1.jpg" alt="mrhdimg4-1"></div>
+                        <div class="tb_mrhdimg left"><img class="left" src="icon/tb_mrhdimg4-2.jpg" alt="mrhdimg4-2"></div>
+                        <div class="tb_mrhdimg left"><img class="left" src="icon/tb_mrhdimg4-3.jpg" alt="mrhdimg4-3"></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+            <div class="tb_yhhagjcom right">
+                <h3>
+                    <img class="left" src="icon/tb_tbzb.png" alt="tbzb">
+                    <p>
+                        <span>你的爱豆直播等你哟！</span>
+                    </p>
+                </h3>
+                <div class="tb_yhhbox tb_ymrhdbox">
+                    <a href="javascript:void(0);">
+                        <div class="tb_mrhdinfo left">
+                            <h4>小茹_cc</h4>
+                            <p>160观看</p>
+                        </div>
+                        <div class="tb_mrhdboximg left">
+                            <div class="tb_mrhdimg left"><img class="left" src="icon/tb_tbzbimg1-1.jpg" alt="tbzbimg1-1"></div>
+                            <div class="tb_mrhdimg left"><img class="left" src="icon/tb_tbzbimg1-2.jpg" alt="tbzbimg1-2"></div>
+                            <div class="tb_mrhdimg left"><img class="left" src="icon/tb_tbzbimg1-3.jpg" alt="tbzbimg1-3"></div>
+                        </div>
+                        <span> 春日出游人气搭配</span>
+                    </a>
+                    <a href="javascript:void(0);">
+                        <div class="tb_mrhdinfo left">
+                            <h4>衣品服饰2号店</h4>
+                            <p>3607观看</p>
+                        </div>
+                        <div class="tb_mrhdboximg left">
+                            <div class="tb_mrhdimg left"><img class="left" src="icon/tb_tbzbimg2-1.jpg" alt="tbzbimg2-1"></div>
+                            <div class="tb_mrhdimg left"><img class="left" src="icon/tb_tbzbimg2-2.jpg" alt="tbzbimg2-2"></div>
+                            <div class="tb_mrhdimg left"><img class="left" src="icon/tb_tbzbimg2-3.jpg" alt="tbzbimg2-3"></div>
+                        </div>
+                        <span> 美衣在这，等您带回家</span>
+                    </a>
+                    <a href="javascript:void(0);">
+                        <div class="tb_mrhdinfo left">
+                            <h4>UNILady</h4>
+                            <p>631333观看</p>
+                        </div>
+                        <div class="tb_mrhdboximg left">
+                            <div class="tb_mrhdimg left"><img class="left" src="icon/tb_tbzbimg3-1.jpg" alt="tbzbimg3-1"></div>
+                            <div class="tb_mrhdimg left"><img class="left" src="icon/tb_tbzbimg3-2.jpg" alt="tbzbimg3-2"></div>
+                            <div class="tb_mrhdimg left"><img class="left" src="icon/tb_tbzbimg3-3.jpg" alt="tbzbimg3-3"></div>
+                        </div>
+                        <span>新势力周最后一波优惠</span>
+                    </a>
+                    <a href="javascript:void(0);">
+                        <div class="tb_mrhdinfo left">
+                            <h4>miss38胖</h4>
+                            <p>6715观看</p>
+                        </div>
+                        <div class="tb_mrhdboximg left">
+                            <div class="tb_mrhdimg left"><img class="left" src="icon/tb_tbzbimg4-1.jpg" alt="tbzbimg4-1"></div>
+                            <div class="tb_mrhdimg left"><img class="left" src="icon/tb_tbzbimg4-2.jpg" alt="tbzbimg4-2"></div>
+                            <div class="tb_mrhdimg left"><img class="left" src="icon/tb_tbzbimg4-3.jpg" alt="tbzbimg4-3"></div>
+                        </div>
+                        <span>新势力福利继续大放送</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="tb_ssblw left">
+            <div class="tb_ssblwlt tb_midcom  left">
+                <h3 class="h3_com">
+                    <em>时尚爆料王</em>
+                </h3>
+                <div class="item left">
+                    <div class="info">
+                        <h4 class=""><a class="left" href="javascript:void(0);">腔调</a></h4>
+                        <p>全球创意设计师平台</p>
+                    </div>
+                    <div class="img">
+                        <a class="left" href="javascript:void(0);"><img class="left" src="icon/tb_ssblw1-1.jpg" alt="ssblw1-1"></a>
+                        <a class="left" href="javascript:void(0);"><img class="left" src="icon/tb_ssblw1-2.jpg" alt="ssblw1-2"></a>
+                    </div>
+                </div>
+                <div class="item left">
+                    <div class="info">
+                        <h4 class=""><a class="left" href="javascript:void(0);">全球购</a></h4>
+                        <p>探索全球美好生活</p>
+                    </div>
+                    <div class="img">
+                        <a class="left" href="javascript:void(0);"><img class="left" src="icon/tb_ssblw2-2.jpg" alt="ssblw2-2"></a>
+                        <a class="left" href="javascript:void(0);"><img class="left" src="icon/tb_ssblw2-1.jpg" alt="ssblw2-1"></a>
+                    </div>
+                </div>
+                <div class="item left">
+                    <div class="info">
+                        <h4 class=""><a class="left" href="javascript:void(0);">魅力惠</a></h4>
+                        <p>奢品好物立即购</p>
+                    </div>
+                    <div class="img">
+                        <a class="left" href="javascript:void(0);"><img class="left" src="icon/tb_ssblw3-1.jpg" alt="ssblw3-1"></a>
+                        <a class="left" href="javascript:void(0);"><img class="left" src="icon/tb_ssblw3-2.jpg" alt="ssblw3-2"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="tb_ssblwrt right">
+                <a href="javascript:void(0);"><img src="icon/tb_ssblwrt.jpg" alt="tb_ssblwrt"></a>
+            </div>
+        </div>
+        <div class="tb_pzts floatnav left" id="floatnav3">
+            <div class="tb_pzlt left">
+                <h3 class="h3_com">
+                    <em>品质生活家</em>
+                </h3>
+                <div class="tb_pztsltlt left">
+                    <div class="tb_pztscomimg1 tb_pztscomdiv left">
+                        <a class="" href="javascript:void(0);"><img class="" src="icon/tb_pzts1-1.png" alt="tb_pzts1-1"></a>
+                    </div>
+                    <div class="tb_pztscomimg2 tb_pztscomdiv left">
+                        <div class="right"><img class="left" src="icon/tb_pzts1-2.jpg" alt="pzts1-2"></div>
+                        <h4>极有家</h4>
+                        <p>过我想要的生活</p>
+                    </div>
+                    <div class="tb_pztscomimg2 tb_pztscomdiv left">
+                        <div class="right"><img class="left" src="icon/tb_pzts1-3.jpg" alt="pzts1-3"></div>
+                        <h4>淘宝花鸟</h4>
+                        <p>园艺宠物爱好者集中营</p>
+                    </div>
+                    <div class="tb_pztscomimg2 tb_pztscomdiv left">
+                        <div class="right"><img class="left" src="icon/tb_pzts1-4.jpg" alt="pzts1-4"></div>
+                        <h4>聚名品</h4>
+                        <p>甄选大牌尖货</p>
+                    </div>
+                </div>
+                <div class="tb_pztsltrt right">
+                    <div class="tb_pztscomimg3 tb_pztscomdiv right">
+                        <h4><a href="javascript:void(0);">亲宝贝</a><span>享受育儿新方式</span></h4>
+                        <div class="img">
+                            <a class="left" href="javascript:void(0);"><img class="left" src="icon/tb_pzts1-5-1.jpg" alt="pzts1-5-1"></a>
+                            <a class="left" href="javascript:void(0);"><img class="left" src="icon/tb_pzts1-5-2.jpg" alt="pzts1-5-2"></a>
+                        </div>
+                    </div>
+                    <div class="tb_pztscomimg3 tb_pztscomdiv right">
+                        <h4><a href="javascript:void(0);">淘宝教育</a><span>给你未来的学习体验</span></h4>
+                        <div class="img">
+                            <a class="left" href="javascript:void(0);"><img class="left" src="icon/tb_pzts1-6-1.jpg" alt="pzts1-6-1"></a>
+                            <a class="left" href="javascript:void(0);"><img class="left" src="icon/tb_pzts1-6-2.jpg" alt="pzts1-6-2"></a>
+                        </div>
+                    </div>
+                    <div class="tb_pztscomimg3 tb_pztscomdiv right">
+                        <h4><a href="javascript:void(0);">特色中国</a><span>地道才够味</span></h4>
+                        <div class="img">
+                            <a class="left" href="javascript:void(0);"><img class="left" src="icon/tb_pzts1-7-1.jpg" alt="pzts1-7-1"></a>
+                            <a class="left" href="javascript:void(0);"><img class="left" src="icon/tb_pzts1-7-2.jpg" alt="pzts1-7-2"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tb_tslt left">
+                <h3 class="h3_com">
+                    <em>特色玩味控</em>
+                </h3>
+                <div class="tb_pztsltlt left">
+                    <div class="tb_pztscomimg1 tb_pztscomdiv left">
+                        <a class="" href="javascript:void(0);"><img class="" src="icon/tb_pzts2-1.jpg" alt="tb_pzts2-1"></a>
+                    </div>
+                    <div class="tb_pztscomimg2 tb_pztscomdiv left">
+                        <div class="right"><img class="left" src="icon/tb_pzts2-2.jpg" alt="pzts2-2"></div>
+                        <h4>淘宝众筹</h4>
+                        <p>脑洞创意坊</p>
+                    </div>
+                    <div class="tb_pztscomimg2 tb_pztscomdiv left">
+                        <div class="right"><img class="left" src="icon/tb_pzts2-3.jpg" alt="pzts2-3"></div>
+                        <h4>中国质造</h4>
+                        <p>懂得好生活</p>
+                    </div>
+                    <div class="tb_pztscomimg2 tb_pztscomdiv left">
+                        <div class="right"><img class="left" src="icon/tb_pzts2-4.jpg" alt="pzts2-4"></div>
+                        <h4>阿里汽车</h4>
+                        <p>冰点低价</p>
+                    </div>
+                </div>
+                <div class="tb_pztsltrt right">
+                    <div class="tb_pztscomimg3 tb_pztscomdiv right">
+                        <h4><a href="javascript:void(0);">淘宝动漫</a><span>童年经典美漫经典</span></h4>
+                        <div class="img">
+                            <a class="left" href="javascript:void(0);"><img class="left" src="icon/tb_pzts2-5-1.jpg" alt="pzts2-5-1"></a>
+                            <a class="left" href="javascript:void(0);"><img class="left" src="icon/tb_pzts2-5-2.jpg" alt="pzts2-5-2"></a>
+                        </div>
+                    </div>
+                    <div class="tb_pztscomimg3 tb_pztscomdiv right">
+                        <h4><a href="javascript:void(0);">淘宝文创</a><span>潮流文创聚集地</span></h4>
+                        <div class="img">
+                            <a class="left" href="javascript:void(0);"><img class="left" src="icon/tb_pzts2-6-1.jpg" alt="pzts2-6-1"></a>
+                            <a class="left" href="javascript:void(0);"><img class="left" src="icon/tb_pzts2-6-2.jpg" alt="pzts2-6-2"></a>
+                        </div>
+                    </div>
+                    <div class="tb_pztscomimg3 tb_pztscomdiv right">
+                        <h4><a href="javascript:void(0);">淘宝电场</a><span>科技潮玩看我</span></h4>
+                        <div class="img">
+                            <a class="left" href="javascript:void(0);"><img class="left" src="icon/tb_pzts2-7-1.jpg" alt="pzts2-7-1"></a>
+                            <a class="left" href="javascript:void(0);"><img class="left" src="icon/tb_pzts2-7-2.jpg" alt="pzts2-7-2"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tb_shzyh floatnav left" id="floatnav4">
+            <div class=" tb_shzyhlt tb_midcom  left">
+                <h3 class="h3_com">
+                    <em>实惠专业户</em>
+                </h3>
+                <div class="item left">
+                    <h4><a href="javascript:void(0);">天天特价</a></h4>
+                    <div class="img">
+                        <a class="left" href="javascript:void(0);"><img class="left" src="icon/tb_shzyh1.jpg" alt="tb_shzyh1"></a>
+                    </div>
+                    <div class="info">
+                        <p>优惠好货</p>
+                        <p>特价专区</p>
+                        <a href="javascript:void(0);">全场包邮</a>
+                    </div>
+                </div>
+                <div class="item left">
+                    <h4><a href="javascript:void(0);">淘金币</a></h4>
+                    <div class="img">
+                        <a class="left" href="javascript:void(0);"><img class="left" src="icon/tb_shzyh2.jpg" alt="tb_shzyh2"></a>
+                    </div>
+                    <div class="info">
+                        <p>异域风味</p>
+                        <p>台湾美食</p>
+                        <a href="javascript:void(0);">签到领金币</a>
+                    </div>
+                </div>
+                <div class="item left">
+                    <h4><a href="javascript:void(0);">量贩团</a></h4>
+                    <div class="img">
+                        <a class="left" href="javascript:void(0);"><img class="left" src="icon/tb_shzyh3.jpg" alt="tb_shzyh3"></a>
+                    </div>
+                    <div class="info">
+                        <p>大包装囤货</p>
+                        <p>超值付邮领</p>
+                        <a href="javascript:void(0);">0.01元疯抢</a>
+                    </div>
+                </div>
+                <div class="item left">
+                    <h4><a href="javascript:void(0);">品牌outlets</a></h4>
+                    <div class="img">
+                        <a class="left" href="javascript:void(0);"><img class="left" src="icon/tb_shzyh4.jpg" alt="tb_shzyh4"></a>
+                    </div>
+                    <div class="info">
+                        <p>免息购大牌</p>
+                        <p>臻选尖货</p>
+                        <a href="javascript:void(0);">365天超低价</a>
+                    </div>
+                </div>
+                <div class="item left">
+                    <h4><a href="javascript:void(0);">阿里试用</a></h4>
+                    <div class="img">
+                        <a class="left" href="javascript:void(0);"><img class="left" src="icon/tb_shzyh5.jpg" alt="tb_shzyh5"></a>
+                    </div>
+                    <div class="info">
+                        <p>0元免费试</p>
+                        <p>大牌新品</p>
+                        <a href="javascript:void(0);">先用后买</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tb_rmdp left">
+            <h3 class="h3_com left">
+                <em class="left">热卖单品</em>
+            </h3>
+            <div class="tb_rmdpnav left">
+                <a href="javascript:void(0);">红内裤</a>
+                <a href="javascript:void(0);">密封条</a>
+                <a href="javascript:void(0);">锅巴</a>
+                <a href="javascript:void(0);">乳胶垫</a>
+                <a href="javascript:void(0);">男内裤</a>
+                <a href="javascript:void(0);">台式机</a>
+                <a href="javascript:void(0);">喜糖</a>
+                <a href="javascript:void(0);">男T恤</a>
+                <a href="javascript:void(0);">薄荷糖</a>
+                <a href="javascript:void(0);">主机</a>
+                <a href="javascript:void(0);">糖果</a>
+                <a href="javascript:void(0);">牛轧糖</a>
+                <a href="javascript:void(0);">零食包</a>
+                <img src="icon/tb_ads.png" alt="ads">
+            </div>
+            <div class="tb_rmdpcom">
+                <a href="javascript:void(0);"><img src="icon/tb_rmdp1.jpg" alt="rmdp1"></a>
+                <a class="title" href="javascript:void(0);"><img src="icon/tb_by.png" alt="tb_by">I5/GTX1060独显吃鸡主机组装台式机绝地求生</a>
+                <div class="tb_rmdpjudge left">
+                    <a href="javascript:void(0);">评价<em>3</em></a>
+                    <a href="javascript:void(0);">收藏<em>142</em></a>
+
+                </div>
+                <div class="tb_rmdpprice left">
+                    <a href="javascript:void(0);"><span>¥</span><em>2099</em></a>
+                    <a href="javascript:void(0);"><span>¥</span><em>5247.5</em></a>
+                    <a class="tb_rmdpyx" href="javascript:void(0);">月销<em>5</em>笔</a>
+                </div>
+            </div>
+            <div class="tb_rmdpcom">
+                <a href="javascript:void(0);"><img src="icon/tb_rmdp1.jpg" alt="rmdp1"></a>
+                <a class="title" href="javascript:void(0);"><img src="icon/tb_by.png" alt="tb_by">I5/GTX1060独显吃鸡主机组装台式机绝地求生</a>
+                <div class="tb_rmdpjudge left">
+                    <a href="javascript:void(0);">评价<em>3</em></a>
+                    <a href="javascript:void(0);">收藏<em>142</em></a>
+
+                </div>
+                <div class="tb_rmdpprice left">
+                    <a href="javascript:void(0);"><span>¥</span><em>2099</em></a>
+                    <a href="javascript:void(0);"><span>¥</span><em>5247.5</em></a>
+                    <a class="tb_rmdpyx" href="javascript:void(0);">月销<em>5</em>笔</a>
+                </div>
+            </div>
+            <div class="tb_rmdpcom">
+                <a href="javascript:void(0);"><img src="icon/tb_rmdp1.jpg" alt="rmdp1"></a>
+                <a class="title" href="javascript:void(0);"><img src="icon/tb_by.png" alt="tb_by">I5/GTX1060独显吃鸡主机组装台式机绝地求生</a>
+                <div class="tb_rmdpjudge left">
+                    <a href="javascript:void(0);">评价<em>3</em></a>
+                    <a href="javascript:void(0);">收藏<em>142</em></a>
+
+                </div>
+                <div class="tb_rmdpprice left">
+                    <a href="javascript:void(0);"><span>¥</span><em>2099</em></a>
+                    <a href="javascript:void(0);"><span>¥</span><em>5247.5</em></a>
+                    <a class="tb_rmdpyx" href="javascript:void(0);">月销<em>5</em>笔</a>
+                </div>
+            </div>
+            <div class="tb_rmdpcom">
+                <a href="javascript:void(0);"><img src="icon/tb_rmdp1.jpg" alt="rmdp1"></a>
+                <a class="title" href="javascript:void(0);"><img src="icon/tb_by.png" alt="tb_by">I5/GTX1060独显吃鸡主机组装台式机绝地求生</a>
+                <div class="tb_rmdpjudge left">
+                    <a href="javascript:void(0);">评价<em>3</em></a>
+                    <a href="javascript:void(0);">收藏<em>142</em></a>
+
+                </div>
+                <div class="tb_rmdpprice left">
+                    <a href="javascript:void(0);"><span>¥</span><em>2099</em></a>
+                    <a href="javascript:void(0);"><span>¥</span><em>5247.5</em></a>
+                    <a class="tb_rmdpyx" href="javascript:void(0);">月销<em>5</em>笔</a>
+                </div>
+            </div>
+            <div class="tb_rmdpcom">
+                <a href="javascript:void(0);"><img src="icon/tb_rmdp1.jpg" alt="rmdp1"></a>
+                <a class="title" href="javascript:void(0);"><img src="icon/tb_by.png" alt="tb_by">I5/GTX1060独显吃鸡主机组装台式机绝地求生</a>
+                <div class="tb_rmdpjudge left">
+                    <a href="javascript:void(0);">评价<em>3</em></a>
+                    <a href="javascript:void(0);">收藏<em>142</em></a>
+
+                </div>
+                <div class="tb_rmdpprice left">
+                    <a href="javascript:void(0);"><span>¥</span><em>2099</em></a>
+                    <a href="javascript:void(0);"><span>¥</span><em>5247.5</em></a>
+                    <a class="tb_rmdpyx" href="javascript:void(0);">月销<em>5</em>笔</a>
+                </div>
+            </div>
+            <div class="tb_rmdpcom">
+                <a href="javascript:void(0);"><img src="icon/tb_rmdp2.jpg" alt="rmdp2"></a>
+                <a class="title" href="javascript:void(0);"><img src="icon/tb_by.png" alt="tb_by">ROG/玩家国度 GR8 II i5 i7准系统迷你台式</a>
+                <div class="tb_rmdpjudge left">
+                    <a href="javascript:void(0);">评价<em>7</em></a>
+                    <a href="javascript:void(0);">收藏<em>402</em></a>
+                </div>
+                <div class="tb_rmdpprice left">
+                    <a href="javascript:void(0);"><span>¥</span><em>6999</em></a>
+                    <a href="javascript:void(0);"><span>¥</span><em>7299</em></a>
+                    <a class="tb_rmdpyx" href="javascript:void(0);">月销<em>3</em>笔</a>
+                </div>
+            </div>
+            <div class="tb_rmdpcom">
+                <a href="javascript:void(0);"><img src="icon/tb_rmdp2.jpg" alt="rmdp2"></a>
+                <a class="title" href="javascript:void(0);"><img src="icon/tb_by.png" alt="tb_by">ROG/玩家国度 GR8 II i5 i7准系统迷你台式</a>
+                <div class="tb_rmdpjudge left">
+                    <a href="javascript:void(0);">评价<em>7</em></a>
+                    <a href="javascript:void(0);">收藏<em>402</em></a>
+                </div>
+                <div class="tb_rmdpprice left">
+                    <a href="javascript:void(0);"><span>¥</span><em>6999</em></a>
+                    <a href="javascript:void(0);"><span>¥</span><em>7299</em></a>
+                    <a class="tb_rmdpyx" href="javascript:void(0);">月销<em>3</em>笔</a>
+                </div>
+            </div>
+            <div class="tb_rmdpcom">
+                <a href="javascript:void(0);"><img src="icon/tb_rmdp2.jpg" alt="rmdp2"></a>
+                <a class="title" href="javascript:void(0);"><img src="icon/tb_by.png" alt="tb_by">ROG/玩家国度 GR8 II i5 i7准系统迷你台式</a>
+                <div class="tb_rmdpjudge left">
+                    <a href="javascript:void(0);">评价<em>7</em></a>
+                    <a href="javascript:void(0);">收藏<em>402</em></a>
+                </div>
+                <div class="tb_rmdpprice left">
+                    <a href="javascript:void(0);"><span>¥</span><em>6999</em></a>
+                    <a href="javascript:void(0);"><span>¥</span><em>7299</em></a>
+                    <a class="tb_rmdpyx" href="javascript:void(0);">月销<em>3</em>笔</a>
+                </div>
+            </div>
+            <div class="tb_rmdpcom">
+                <a href="javascript:void(0);"><img src="icon/tb_rmdp2.jpg" alt="rmdp2"></a>
+                <a class="title" href="javascript:void(0);"><img src="icon/tb_by.png" alt="tb_by">ROG/玩家国度 GR8 II i5 i7准系统迷你台式</a>
+                <div class="tb_rmdpjudge left">
+                    <a href="javascript:void(0);">评价<em>7</em></a>
+                    <a href="javascript:void(0);">收藏<em>402</em></a>
+                </div>
+                <div class="tb_rmdpprice left">
+                    <a href="javascript:void(0);"><span>¥</span><em>6999</em></a>
+                    <a href="javascript:void(0);"><span>¥</span><em>7299</em></a>
+                    <a class="tb_rmdpyx" href="javascript:void(0);">月销<em>3</em>笔</a>
+                </div>
+            </div>
+            <div class="tb_rmdpcom">
+                <a href="javascript:void(0);"><img src="icon/tb_rmdp2.jpg" alt="rmdp2"></a>
+                <a class="title" href="javascript:void(0);"><img src="icon/tb_by.png" alt="tb_by">ROG/玩家国度 GR8 II i5 i7准系统迷你台式</a>
+                <div class="tb_rmdpjudge left">
+                    <a href="javascript:void(0);">评价<em>7</em></a>
+                    <a href="javascript:void(0);">收藏<em>402</em></a>
+                </div>
+                <div class="tb_rmdpprice left">
+                    <a href="javascript:void(0);"><span>¥</span><em>6999</em></a>
+                    <a href="javascript:void(0);"><span>¥</span><em>7299</em></a>
+                    <a class="tb_rmdpyx" href="javascript:void(0);">月销<em>3</em>笔</a>
+                </div>
+            </div>
+        </div>
+        <div class="tb_rmdp floatnav tb_cnxh left" id="floatnav5">
+            <h3 class="h3_com left">
+                <em class="left">猜你喜欢</em>
+            </h3>
+            <div class="tb_rmdpcom tb_cnxhcom left">
+                <a class="tb_cnxhcoma" href="javascript:void(0);"><img src="icon/tb_cnxh1.jpg" alt="cnxh1"></a>
+                <a class="title" href="javascript:void(0);">酷睿i7-7700/GTX1060独显绝地求生吃鸡游戏台式电脑主机全套</a>
+                <div class="tb_rmdpprice tb_cnxhprice left">
+                    <a href="javascript:void(0);"><span>¥</span><em>3599</em></a>
+                    <a class="tb_rmdpyx" href="javascript:void(0);">销量：<em>5</em></a>
+                </div>
+                <div class="tb_cnxhfind">
+                    <a href="javascript:void(0);"><p>找相似</p>
+                        <p>发现更多相似的宝贝></p></a>
+                </div>
+            </div>
+            <div class="tb_rmdpcom tb_cnxhcom left">
+                <a class="tb_cnxhcoma" href="javascript:void(0);"><img src="icon/tb_cnxh2.jpg" alt="cnxh2"></a>
+                <a class="title" href="javascript:void(0);">佐丹奴短袖T恤 4件装 男纯棉T-shirt 男圆领纯色体恤衫 01247003</a>
+                <div class="tb_rmdpprice tb_cnxhprice left">
+                    <a href="javascript:void(0);"><span>¥</span><em>199.9</em></a>
+                    <a class="tb_rmdpyx" href="javascript:void(0);">销量：<em>649</em></a>
+                </div>
+                <div class="tb_cnxhfind">
+                    <a href="javascript:void(0);"><p>找相似</p>
+                        <p>发现更多相似的宝贝></p></a>
+                </div>
+            </div>
+            <div class="tb_rmdpcom tb_cnxhcom left">
+                <a class="tb_cnxhcoma" href="javascript:void(0);"><img src="icon/tb_cnxh3.jpg" alt="cnxh3"></a>
+                <a class="title" href="javascript:void(0);">鑫炬火NFD10迷你电脑赛扬1037U/I3 3217U/I5 3317U工控6COM整机</a>
+                <div class="tb_rmdpprice tb_cnxhprice left">
+                    <a href="javascript:void(0);"><span>¥</span><em>790</em></a>
+                    <a class="tb_rmdpyx" href="javascript:void(0);">销量：<em>0</em></a>
+                </div>
+                <div class="tb_cnxhfind">
+                    <a href="javascript:void(0);"><p>找相似</p>
+                        <p>发现更多相似的宝贝></p></a>
+                </div>
+            </div>
+            <div class="tb_rmdpcom tb_cnxhcom left">
+                <a class="tb_cnxhcoma" href="javascript:void(0);"><img src="icon/tb_cnxh4.jpg" alt="cnxh4"></a>
+                <a class="title" href="javascript:void(0);">舜威 点烟器一拖三多功能用插头带USB汽车一</a>
+                <div class="tb_rmdpprice tb_cnxhprice left">
+                    <a href="javascript:void(0);"><span>¥</span><em>28</em></a>
+                    <a class="tb_rmdpyx" href="javascript:void(0);">销量：<em>7226</em></a>
+                </div>
+                <div class="tb_cnxhfind">
+                    <a href="javascript:void(0);"><p>找相似</p>
+                        <p>发现更多相似的宝贝></p></a>
+                </div>
+            </div>
+            <div class="tb_rmdpcom tb_cnxhcom left">
+            <a class="tb_cnxhcoma" href="javascript:void(0);"><img src="icon/tb_cnxh5.jpg" alt="cnxh5"></a>
+            <a class="title" href="javascript:void(0);">i78700k1070独显游戏DIY台式电脑主机组装机</a>
+            <div class="tb_rmdpprice tb_cnxhprice left">
+                <a href="javascript:void(0);"><span>¥</span><em>6699</em></a>
+                <a class="tb_rmdpyx" href="javascript:void(0);">销量：<em>128</em></a>
+            </div>
+            <div class="tb_cnxhfind">
+                <a href="javascript:void(0);"><p>找相似</p>
+                    <p>发现更多相似的宝贝></p></a>
+            </div>
+        </div>
+            <div class="tb_rmdpcom tb_cnxhcom left">
+                <a class="tb_cnxhcoma" href="javascript:void(0);"><img src="icon/tb_cnxh5.jpg" alt="cnxh5"></a>
+                <a class="title" href="javascript:void(0);">i78700k1070独显游戏DIY台式电脑主机组装机</a>
+                <div class="tb_rmdpprice tb_cnxhprice left">
+                    <a href="javascript:void(0);"><span>¥</span><em>6699</em></a>
+                    <a class="tb_rmdpyx" href="javascript:void(0);">销量：<em>128</em></a>
+                </div>
+                <div class="tb_cnxhfind">
+                    <a href="javascript:void(0);"><p>找相似</p>
+                        <p>发现更多相似的宝贝></p></a>
+                </div>
+            </div>
+            <div class="tb_rmdpcom tb_cnxhcom left">
+                <a class="tb_cnxhcoma" href="javascript:void(0);"><img src="icon/tb_cnxh4.jpg" alt="cnxh4"></a>
+                <a class="title" href="javascript:void(0);">舜威 点烟器一拖三多功能用插头带USB汽车一</a>
+                <div class="tb_rmdpprice tb_cnxhprice left">
+                    <a href="javascript:void(0);"><span>¥</span><em>28</em></a>
+                    <a class="tb_rmdpyx" href="javascript:void(0);">销量：<em>7226</em></a>
+                </div>
+                <div class="tb_cnxhfind">
+                    <a href="javascript:void(0);"><p>找相似</p>
+                        <p>发现更多相似的宝贝></p></a>
+                </div>
+            </div>
+            <div class="tb_rmdpcom tb_cnxhcom left">
+                <a class="tb_cnxhcoma" href="javascript:void(0);"><img src="icon/tb_cnxh3.jpg" alt="cnxh3"></a>
+                <a class="title" href="javascript:void(0);">鑫炬火NFD10迷你电脑赛扬1037U/I3 3217U/I5 3317U工控6COM整机</a>
+                <div class="tb_rmdpprice tb_cnxhprice left">
+                    <a href="javascript:void(0);"><span>¥</span><em>790</em></a>
+                    <a class="tb_rmdpyx" href="javascript:void(0);">销量：<em>0</em></a>
+                </div>
+                <div class="tb_cnxhfind">
+                    <a href="javascript:void(0);"><p>找相似</p>
+                        <p>发现更多相似的宝贝></p></a>
+                </div>
+            </div>
+            <div class="tb_rmdpcom tb_cnxhcom left">
+                <a class="tb_cnxhcoma" href="javascript:void(0);"><img src="icon/tb_cnxh2.jpg" alt="cnxh2"></a>
+                <a class="title" href="javascript:void(0);">佐丹奴短袖T恤 4件装 男纯棉T-shirt 男圆领纯色体恤衫 01247003</a>
+                <div class="tb_rmdpprice tb_cnxhprice left">
+                    <a href="javascript:void(0);"><span>¥</span><em>199.9</em></a>
+                    <a class="tb_rmdpyx" href="javascript:void(0);">销量：<em>649</em></a>
+                </div>
+                <div class="tb_cnxhfind">
+                    <a href="javascript:void(0);"><p>找相似</p>
+                        <p>发现更多相似的宝贝></p></a>
+                </div>
+            </div>
+            <div class="tb_rmdpcom tb_cnxhcom left">
+                <a class="tb_cnxhcoma" href="javascript:void(0);"><img src="icon/tb_cnxh1.jpg" alt="cnxh1"></a>
+                <a class="title" href="javascript:void(0);">酷睿i7-7700/GTX1060独显绝地求生吃鸡游戏台式电脑主机全套</a>
+                <div class="tb_rmdpprice tb_cnxhprice left">
+                    <a href="javascript:void(0);"><span>¥</span><em>3599</em></a>
+                    <a class="tb_rmdpyx" href="javascript:void(0);">销量：<em>5</em></a>
+                </div>
+                <div class="tb_cnxhfind">
+                    <a href="javascript:void(0);"><p>找相似</p>
+                        <p>发现更多相似的宝贝></p></a>
+                </div>
+            </div>
+            <div class="tb_rmdpcom tb_cnxhcom left">
+                <a class="tb_cnxhcoma" href="javascript:void(0);"><img src="icon/tb_cnxh1.jpg" alt="cnxh1"></a>
+                <a class="title" href="javascript:void(0);">酷睿i7-7700/GTX1060独显绝地求生吃鸡游戏台式电脑主机全套</a>
+                <div class="tb_rmdpprice tb_cnxhprice left">
+                    <a href="javascript:void(0);"><span>¥</span><em>3599</em></a>
+                    <a class="tb_rmdpyx" href="javascript:void(0);">销量：<em>5</em></a>
+                </div>
+                <div class="tb_cnxhfind">
+                    <a href="javascript:void(0);"><p>找相似</p>
+                        <p>发现更多相似的宝贝></p></a>
+                </div>
+            </div>
+            <div class="tb_rmdpcom tb_cnxhcom left">
+                <a class="tb_cnxhcoma" href="javascript:void(0);"><img src="icon/tb_cnxh1.jpg" alt="cnxh1"></a>
+                <a class="title" href="javascript:void(0);">酷睿i7-7700/GTX1060独显绝地求生吃鸡游戏台式电脑主机全套</a>
+                <div class="tb_rmdpprice tb_cnxhprice left">
+                    <a href="javascript:void(0);"><span>¥</span><em>3599</em></a>
+                    <a class="tb_rmdpyx" href="javascript:void(0);">销量：<em>5</em></a>
+                </div>
+                <div class="tb_cnxhfind">
+                    <a href="javascript:void(0);"><p>找相似</p>
+                        <p>发现更多相似的宝贝></p></a>
+                </div>
+            </div>
+            <div class="tb_rmdpcom tb_cnxhcom left">
+                <a class="tb_cnxhcoma" href="javascript:void(0);"><img src="icon/tb_cnxh1.jpg" alt="cnxh1"></a>
+                <a class="title" href="javascript:void(0);">酷睿i7-7700/GTX1060独显绝地求生吃鸡游戏台式电脑主机全套</a>
+                <div class="tb_rmdpprice tb_cnxhprice left">
+                    <a href="javascript:void(0);"><span>¥</span><em>3599</em></a>
+                    <a class="tb_rmdpyx" href="javascript:void(0);">销量：<em>5</em></a>
+                </div>
+                <div class="tb_cnxhfind">
+                    <a href="javascript:void(0);"><p>找相似</p>
+                        <p>发现更多相似的宝贝></p></a>
+                </div>
+            </div>
+            <div class="tb_rmdpcom tb_cnxhcom left">
+                <a class="tb_cnxhcoma" href="javascript:void(0);"><img src="icon/tb_cnxh1.jpg" alt="cnxh1"></a>
+                <a class="title" href="javascript:void(0);">酷睿i7-7700/GTX1060独显绝地求生吃鸡游戏台式电脑主机全套</a>
+                <div class="tb_rmdpprice tb_cnxhprice left">
+                    <a href="javascript:void(0);"><span>¥</span><em>3599</em></a>
+                    <a class="tb_rmdpyx" href="javascript:void(0);">销量：<em>5</em></a>
+                </div>
+                <div class="tb_cnxhfind">
+                    <a href="javascript:void(0);"><p>找相似</p>
+                        <p>发现更多相似的宝贝></p></a>
+                </div>
+            </div>
+            <div class="tb_rmdpcom tb_cnxhcom left">
+                <a class="tb_cnxhcoma" href="javascript:void(0);"><img src="icon/tb_cnxh1.jpg" alt="cnxh1"></a>
+                <a class="title" href="javascript:void(0);">酷睿i7-7700/GTX1060独显绝地求生吃鸡游戏台式电脑主机全套</a>
+                <div class="tb_rmdpprice tb_cnxhprice left">
+                    <a href="javascript:void(0);"><span>¥</span><em>3599</em></a>
+                    <a class="tb_rmdpyx" href="javascript:void(0);">销量：<em>5</em></a>
+                </div>
+                <div class="tb_cnxhfind">
+                    <a href="javascript:void(0);"><p>找相似</p>
+                        <p>发现更多相似的宝贝></p></a>
+                </div>
+            </div>
+            <div class="tb_rmdpcom tb_cnxhcom left">
+                <a class="tb_cnxhcoma" href="javascript:void(0);"><img src="icon/tb_cnxh2.jpg" alt="cnxh2"></a>
+                <a class="title" href="javascript:void(0);">佐丹奴短袖T恤 4件装 男纯棉T-shirt 男圆领纯色体恤衫 01247003</a>
+                <div class="tb_rmdpprice tb_cnxhprice left">
+                    <a href="javascript:void(0);"><span>¥</span><em>199.9</em></a>
+                    <a class="tb_rmdpyx" href="javascript:void(0);">销量：<em>649</em></a>
+                </div>
+                <div class="tb_cnxhfind">
+                    <a href="javascript:void(0);"><p>找相似</p>
+                        <p>发现更多相似的宝贝></p></a>
+                </div>
+            </div>
+            <div class="tb_rmdpcom tb_cnxhcom left">
+                <a class="tb_cnxhcoma" href="javascript:void(0);"><img src="icon/tb_cnxh2.jpg" alt="cnxh2"></a>
+                <a class="title" href="javascript:void(0);">佐丹奴短袖T恤 4件装 男纯棉T-shirt 男圆领纯色体恤衫 01247003</a>
+                <div class="tb_rmdpprice tb_cnxhprice left">
+                    <a href="javascript:void(0);"><span>¥</span><em>199.9</em></a>
+                    <a class="tb_rmdpyx" href="javascript:void(0);">销量：<em>649</em></a>
+                </div>
+                <div class="tb_cnxhfind">
+                    <a href="javascript:void(0);"><p>找相似</p>
+                        <p>发现更多相似的宝贝></p></a>
+                </div>
+            </div>
+            <div class="tb_rmdpcom tb_cnxhcom left">
+                <a class="tb_cnxhcoma" href="javascript:void(0);"><img src="icon/tb_cnxh2.jpg" alt="cnxh2"></a>
+                <a class="title" href="javascript:void(0);">佐丹奴短袖T恤 4件装 男纯棉T-shirt 男圆领纯色体恤衫 01247003</a>
+                <div class="tb_rmdpprice tb_cnxhprice left">
+                    <a href="javascript:void(0);"><span>¥</span><em>199.9</em></a>
+                    <a class="tb_rmdpyx" href="javascript:void(0);">销量：<em>649</em></a>
+                </div>
+                <div class="tb_cnxhfind">
+                    <a href="javascript:void(0);"><p>找相似</p>
+                        <p>发现更多相似的宝贝></p></a>
+                </div>
+            </div>
+            <div class="tb_rmdpcom tb_cnxhcom left">
+                <a class="tb_cnxhcoma" href="javascript:void(0);"><img src="icon/tb_cnxh2.jpg" alt="cnxh2"></a>
+                <a class="title" href="javascript:void(0);">佐丹奴短袖T恤 4件装 男纯棉T-shirt 男圆领纯色体恤衫 01247003</a>
+                <div class="tb_rmdpprice tb_cnxhprice left">
+                    <a href="javascript:void(0);"><span>¥</span><em>199.9</em></a>
+                    <a class="tb_rmdpyx" href="javascript:void(0);">销量：<em>649</em></a>
+                </div>
+                <div class="tb_cnxhfind">
+                    <a href="javascript:void(0);"><p>找相似</p>
+                        <p>发现更多相似的宝贝></p></a>
+                </div>
+            </div>
+            <div class="tb_rmdpcom tb_cnxhcom left">
+                <a class="tb_cnxhcoma" href="javascript:void(0);"><img src="icon/tb_cnxh2.jpg" alt="cnxh2"></a>
+                <a class="title" href="javascript:void(0);">佐丹奴短袖T恤 4件装 男纯棉T-shirt 男圆领纯色体恤衫 01247003</a>
+                <div class="tb_rmdpprice tb_cnxhprice left">
+                    <a href="javascript:void(0);"><span>¥</span><em>199.9</em></a>
+                    <a class="tb_rmdpyx" href="javascript:void(0);">销量：<em>649</em></a>
+                </div>
+                <div class="tb_cnxhfind">
+                    <a href="javascript:void(0);"><p>找相似</p>
+                        <p>发现更多相似的宝贝></p></a>
+                </div>
+            </div>
+            <div class="tb_rmdpcom tb_cnxhcom left">
+                <a class="tb_cnxhcoma" href="javascript:void(0);"><img src="icon/tb_cnxh3.jpg" alt="cnxh3"></a>
+                <a class="title" href="javascript:void(0);">鑫炬火NFD10迷你电脑赛扬1037U/I3 3217U/I5 3317U工控6COM整机</a>
+                <div class="tb_rmdpprice tb_cnxhprice left">
+                    <a href="javascript:void(0);"><span>¥</span><em>790</em></a>
+                    <a class="tb_rmdpyx" href="javascript:void(0);">销量：<em>0</em></a>
+                </div>
+                <div class="tb_cnxhfind">
+                    <a href="javascript:void(0);"><p>找相似</p>
+                        <p>发现更多相似的宝贝></p></a>
+                </div>
+            </div>
+            <div class="tb_rmdpcom tb_cnxhcom left">
+                <a class="tb_cnxhcoma" href="javascript:void(0);"><img src="icon/tb_cnxh3.jpg" alt="cnxh3"></a>
+                <a class="title" href="javascript:void(0);">鑫炬火NFD10迷你电脑赛扬1037U/I3 3217U/I5 3317U工控6COM整机</a>
+                <div class="tb_rmdpprice tb_cnxhprice left">
+                    <a href="javascript:void(0);"><span>¥</span><em>790</em></a>
+                    <a class="tb_rmdpyx" href="javascript:void(0);">销量：<em>0</em></a>
+                </div>
+                <div class="tb_cnxhfind">
+                    <a href="javascript:void(0);"><p>找相似</p>
+                        <p>发现更多相似的宝贝></p></a>
+                </div>
+            </div>
+            <div class="tb_rmdpcom tb_cnxhcom left">
+                <a class="tb_cnxhcoma" href="javascript:void(0);"><img src="icon/tb_cnxh3.jpg" alt="cnxh3"></a>
+                <a class="title" href="javascript:void(0);">鑫炬火NFD10迷你电脑赛扬1037U/I3 3217U/I5 3317U工控6COM整机</a>
+                <div class="tb_rmdpprice tb_cnxhprice left">
+                    <a href="javascript:void(0);"><span>¥</span><em>790</em></a>
+                    <a class="tb_rmdpyx" href="javascript:void(0);">销量：<em>0</em></a>
+                </div>
+                <div class="tb_cnxhfind">
+                    <a href="javascript:void(0);"><p>找相似</p>
+                        <p>发现更多相似的宝贝></p></a>
+                </div>
+            </div>
+            <div class="tb_rmdpcom tb_cnxhcom left">
+                <a class="tb_cnxhcoma" href="javascript:void(0);"><img src="icon/tb_cnxh3.jpg" alt="cnxh3"></a>
+                <a class="title" href="javascript:void(0);">鑫炬火NFD10迷你电脑赛扬1037U/I3 3217U/I5 3317U工控6COM整机</a>
+                <div class="tb_rmdpprice tb_cnxhprice left">
+                    <a href="javascript:void(0);"><span>¥</span><em>790</em></a>
+                    <a class="tb_rmdpyx" href="javascript:void(0);">销量：<em>0</em></a>
+                </div>
+                <div class="tb_cnxhfind">
+                    <a href="javascript:void(0);"><p>找相似</p>
+                        <p>发现更多相似的宝贝></p></a>
+                </div>
+            </div>
+            <div class="tb_rmdpcom tb_cnxhcom left">
+                <a class="tb_cnxhcoma" href="javascript:void(0);"><img src="icon/tb_cnxh3.jpg" alt="cnxh3"></a>
+                <a class="title" href="javascript:void(0);">鑫炬火NFD10迷你电脑赛扬1037U/I3 3217U/I5 3317U工控6COM整机</a>
+                <div class="tb_rmdpprice tb_cnxhprice left">
+                    <a href="javascript:void(0);"><span>¥</span><em>790</em></a>
+                    <a class="tb_rmdpyx" href="javascript:void(0);">销量：<em>0</em></a>
+                </div>
+                <div class="tb_cnxhfind">
+                    <a href="javascript:void(0);"><p>找相似</p>
+                        <p>发现更多相似的宝贝></p></a>
+                </div>
+            </div>
+            <div class="tb_rmdpcom tb_cnxhcom left">
+                <a class="tb_cnxhcoma" href="javascript:void(0);"><img src="icon/tb_cnxh4.jpg" alt="cnxh4"></a>
+                <a class="title" href="javascript:void(0);">舜威 点烟器一拖三多功能用插头带USB汽车一</a>
+                <div class="tb_rmdpprice tb_cnxhprice left">
+                    <a href="javascript:void(0);"><span>¥</span><em>28</em></a>
+                    <a class="tb_rmdpyx" href="javascript:void(0);">销量：<em>7226</em></a>
+                </div>
+                <div class="tb_cnxhfind">
+                    <a href="javascript:void(0);"><p>找相似</p>
+                        <p>发现更多相似的宝贝></p></a>
+                </div>
+            </div>
+            <div class="tb_rmdpcom tb_cnxhcom left">
+            <a class="tb_cnxhcoma" href="javascript:void(0);"><img src="icon/tb_cnxh4.jpg" alt="cnxh4"></a>
+            <a class="title" href="javascript:void(0);">舜威 点烟器一拖三多功能用插头带USB汽车一</a>
+            <div class="tb_rmdpprice tb_cnxhprice left">
+                <a href="javascript:void(0);"><span>¥</span><em>28</em></a>
+                <a class="tb_rmdpyx" href="javascript:void(0);">销量：<em>7226</em></a>
+            </div>
+            <div class="tb_cnxhfind">
+                <a href="javascript:void(0);"><p>找相似</p>
+                    <p>发现更多相似的宝贝></p></a>
+            </div>
+        </div>
+            <div class="tb_rmdpcom tb_cnxhcom left">
+                <a class="tb_cnxhcoma" href="javascript:void(0);"><img src="icon/tb_cnxh4.jpg" alt="cnxh4"></a>
+                <a class="title" href="javascript:void(0);">舜威 点烟器一拖三多功能用插头带USB汽车一</a>
+                <div class="tb_rmdpprice tb_cnxhprice left">
+                    <a href="javascript:void(0);"><span>¥</span><em>28</em></a>
+                    <a class="tb_rmdpyx" href="javascript:void(0);">销量：<em>7226</em></a>
+                </div>
+                <div class="tb_cnxhfind">
+                    <a href="javascript:void(0);"><p>找相似</p>
+                        <p>发现更多相似的宝贝></p></a>
+                </div>
+            </div>
+            <div class="tb_rmdpcom tb_cnxhcom left">
+            <a class="tb_cnxhcoma" href="javascript:void(0);"><img src="icon/tb_cnxh4.jpg" alt="cnxh4"></a>
+            <a class="title" href="javascript:void(0);">舜威 点烟器一拖三多功能用插头带USB汽车一</a>
+            <div class="tb_rmdpprice tb_cnxhprice left">
+                <a href="javascript:void(0);"><span>¥</span><em>28</em></a>
+                <a class="tb_rmdpyx" href="javascript:void(0);">销量：<em>7226</em></a>
+            </div>
+            <div class="tb_cnxhfind">
+                <a href="javascript:void(0);"><p>找相似</p>
+                    <p>发现更多相似的宝贝></p></a>
+            </div>
+        </div>
+            <div class="tb_rmdpcom tb_cnxhcom left">
+                <a class="tb_cnxhcoma" href="javascript:void(0);"><img src="icon/tb_cnxh4.jpg" alt="cnxh4"></a>
+                <a class="title" href="javascript:void(0);">舜威 点烟器一拖三多功能用插头带USB汽车一</a>
+                <div class="tb_rmdpprice tb_cnxhprice left">
+                    <a href="javascript:void(0);"><span>¥</span><em>28</em></a>
+                    <a class="tb_rmdpyx" href="javascript:void(0);">销量：<em>7226</em></a>
+                </div>
+                <div class="tb_cnxhfind">
+                    <a href="javascript:void(0);"><p>找相似</p>
+                        <p>发现更多相似的宝贝></p></a>
+                </div>
+            </div>
+            <div class="tb_rmdpcom tb_cnxhcom left">
+                <a class="tb_cnxhcoma" href="javascript:void(0);"><img src="icon/tb_cnxh5.jpg" alt="cnxh5"></a>
+                <a class="title" href="javascript:void(0);">i78700k1070独显游戏DIY台式电脑主机组装机</a>
+                <div class="tb_rmdpprice tb_cnxhprice left">
+                    <a href="javascript:void(0);"><span>¥</span><em>6699</em></a>
+                    <a class="tb_rmdpyx" href="javascript:void(0);">销量：<em>128</em></a>
+                </div>
+                <div class="tb_cnxhfind">
+                    <a href="javascript:void(0);"><p>找相似</p>
+                        <p>发现更多相似的宝贝></p></a>
+                </div>
+            </div>
+            <div class="tb_rmdpcom tb_cnxhcom left">
+                <a class="tb_cnxhcoma" href="javascript:void(0);"><img src="icon/tb_cnxh5.jpg" alt="cnxh5"></a>
+                <a class="title" href="javascript:void(0);">i78700k1070独显游戏DIY台式电脑主机组装机</a>
+                <div class="tb_rmdpprice tb_cnxhprice left">
+                    <a href="javascript:void(0);"><span>¥</span><em>6699</em></a>
+                    <a class="tb_rmdpyx" href="javascript:void(0);">销量：<em>128</em></a>
+                </div>
+                <div class="tb_cnxhfind">
+                    <a href="javascript:void(0);"><p>找相似</p>
+                        <p>发现更多相似的宝贝></p></a>
+                </div>
+            </div>
+            <div class="tb_rmdpcom tb_cnxhcom left">
+                <a class="tb_cnxhcoma" href="javascript:void(0);"><img src="icon/tb_cnxh5.jpg" alt="cnxh5"></a>
+                <a class="title" href="javascript:void(0);">i78700k1070独显游戏DIY台式电脑主机组装机</a>
+                <div class="tb_rmdpprice tb_cnxhprice left">
+                    <a href="javascript:void(0);"><span>¥</span><em>6699</em></a>
+                    <a class="tb_rmdpyx" href="javascript:void(0);">销量：<em>128</em></a>
+                </div>
+                <div class="tb_cnxhfind">
+                    <a href="javascript:void(0);"><p>找相似</p>
+                        <p>发现更多相似的宝贝></p></a>
+                </div>
+            </div>
+            <div class="tb_rmdpcom tb_cnxhcom left">
+                <a class="tb_cnxhcoma" href="javascript:void(0);"><img src="icon/tb_cnxh5.jpg" alt="cnxh5"></a>
+                <a class="title" href="javascript:void(0);">i78700k1070独显游戏DIY台式电脑主机组装机</a>
+                <div class="tb_rmdpprice tb_cnxhprice left">
+                    <a href="javascript:void(0);"><span>¥</span><em>6699</em></a>
+                    <a class="tb_rmdpyx" href="javascript:void(0);">销量：<em>128</em></a>
+                </div>
+                <div class="tb_cnxhfind">
+                    <a href="javascript:void(0);"><p>找相似</p>
+                        <p>发现更多相似的宝贝></p></a>
+                </div>
+            </div>
+            <div class="tb_rmdpcom tb_cnxhcom left">
+                <a class="tb_cnxhcoma" href="javascript:void(0);"><img src="icon/tb_cnxh5.jpg" alt="cnxh5"></a>
+                <a class="title" href="javascript:void(0);">i78700k1070独显游戏DIY台式电脑主机组装机</a>
+                <div class="tb_rmdpprice tb_cnxhprice left">
+                    <a href="javascript:void(0);"><span>¥</span><em>6699</em></a>
+                    <a class="tb_rmdpyx" href="javascript:void(0);">销量：<em>128</em></a>
+                </div>
+                <div class="tb_cnxhfind">
+                    <a href="javascript:void(0);"><p>找相似</p>
+                        <p>发现更多相似的宝贝></p></a>
+                </div>
+            </div>
+        </div>
+        <div class="tb_bot1 left">
+            <p>END</p>
+        </div>
+        <div class="tb_help left">
+            <div class="tb_helpwrap left">
+                <h4 class="left">
+                    <span>消费者保障</span>
+                </h4>
+                <ul class="left">
+                    <li><a href="javascript:void(0);">保障范围</a></li>
+                    <li><a href="javascript:void(0);">退货退款流程</a></li>
+                    <li><a href="javascript:void(0);">服务中心</a></li>
+                    <li><a href="javascript:void(0);">更多特色服务</a></li>
+                </ul>
+            </div>
+            <div class="tb_helpwrap left">
+                <h4 class="left">
+                    <span>新手上路</span>
+                </h4>
+                <ul class="left">
+                    <li><a href="javascript:void(0);">新手专区</a></li>
+                    <li><a href="javascript:void(0);">消费警示</a></li>
+                    <li><a href="javascript:void(0);">交易安全</a></li>
+                    <li><a href="javascript:void(0);">24小时在线帮助</a></li>
+                    <li><a href="javascript:void(0);">免费开店</a></li>
+                </ul>
+            </div>
+            <div class="tb_helpwrap left">
+                <h4 class="left">
+                    <span>付款方式</span>
+                </h4>
+                <ul class="left">
+                    <li><a href="javascript:void(0);">快捷支付</a></li>
+                    <li><a href="javascript:void(0);">信用卡</a></li>
+                    <li><a href="javascript:void(0);">余额宝</a></li>
+                    <li><a href="javascript:void(0);">蚂蚁花呗</a></li>
+                    <li><a href="javascript:void(0);">货到付款</a></li>
+                </ul>
+            </div>
+            <div class="tb_helpwrap left">
+                <h4 class="left">
+                    <span>淘宝特色</span>
+                </h4>
+                <ul class="left">
+                    <li><a href="javascript:void(0);">手机淘宝</a></li>
+                    <li><a href="javascript:void(0);">旺旺/旺信</a></li>
+                    <li><a href="javascript:void(0);">大众评审</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="tb_footer">
+    <div class="com_width">
+        <div class="tb_footer_hd left">
+            <p>
+                <a href="javascript:void(0);">阿里巴巴集团</a><b>|</b>
+                <a href="javascript:void(0);">淘宝网</a><b>|</b>
+                <a href="javascript:void(0);">天猫</a><b>|</b>
+                <a href="javascript:void(0);">聚划算</a><b>|</b>
+                <a href="javascript:void(0);">全球速卖通</a><b>|</b>
+                <a href="javascript:void(0);">阿里巴巴国际交易市场</a><b>|</b>
+                <a href="javascript:void(0);">1688</a><b>|</b>
+                <a href="javascript:void(0);">飞猪</a><b>|</b>
+                <a href="javascript:void(0);">阿里云计算</a><b>|</b>
+                <a href="javascript:void(0);">AliOS</a><b>|</b>
+                <a href="javascript:void(0);">阿里通信</a><b>|</b>
+                <a href="javascript:void(0);">一淘</a><b>|</b>
+                <a href="javascript:void(0);">万网</a><b>|</b>
+                <a href="javascript:void(0);">高德</a><b>|</b>
+                <a href="javascript:void(0);">友盟</a><br>
+                <a href="javascript:void(0);">虾米</a><b>|</b>
+                <a href="javascript:void(0);">大麦网</a><b>|</b>
+                <a href="javascript:void(0);">钉钉</a><b>|</b>
+                <a href="javascript:void(0);">支付宝</a><b>|</b>
+                <a href="javascript:void(0);">优酷</a><b>|</b>
+                <a href="javascript:void(0);">土豆</a><b>|</b>
+                <a href="javascript:void(0);">阿里健康</a><b>|</b>
+                <a href="javascript:void(0);">阿里影业</a><b>|</b>
+                <a href="javascript:void(0);">阿里体育</a><b>|</b>
+                <a href="javascript:void(0);">网商银行</a>
+            </p>
+        </div>
+        <div class="tb_footer_bd left">
+            <p>
+                <a href="javascript:void(0);">关于淘宝</a>
+                <a href="javascript:void(0);">合作伙伴</a>
+                <a href="javascript:void(0);">营销中心</a>
+                <a href="javascript:void(0);">廉政举报</a>
+                <a href="javascript:void(0);">联系客服</a>
+                <a href="javascript:void(0);">开放平台</a>
+                <a href="javascript:void(0);">诚征英才</a>
+                <a href="javascript:void(0);">联系我们</a>
+                <a href="javascript:void(0);">网站地图</a>
+                <a href="javascript:void(0);">法律声明及隐私权政策</a>
+                <a href="javascript:void(0);">知识产权</a><b>|</b>
+                <em>© 2003-现在 Taobao.com 版权所有</em>
+            </p>
+            <p>
+                <a href="javascript:void(0);">网络文化经营许可证：浙网文[2013]0268-027号</a><b>|</b>
+                <a href="javascript:void(0);">增值电信业务经营许可证：浙B2-20080224</a><b>|</b>
+                <em>网络文化经营许可证：浙网文[2013]0268-027号</em><b>|</b>
+                <em>互联网违法和不良信息举报电话：0571-81683755 blxxjb@alibaba-inc.com</em>
+            </p>
+            <p><a href="javascript:void(0);"><span class="left"></span>浙公网安备 33010002000078号</a></p>
+        </div>
+    </div>
+</div>
+<script>
+    var numb=0;
+    var img_wait=document.getElementsByTagName('img');
+    var imgs=[];
+    for(var c in img_wait){
+        if(!img_wait.hasOwnProperty(c)) continue;
+        imgs.push(img_wait[c])
+    }
+    for(var i in imgs){
+        if(!imgs.hasOwnProperty(i)) continue;
+        var newImage= new Image();
+        newImage.src= imgs[i].src;
+        newImage.onload=function () {
+            numb++;
+            document.querySelector('.lds-css span').innerHTML=parseInt(numb/img_wait.length*100)+'%';
+            if(numb>=img_wait.length){
+                document.querySelector('.lds-css').style.display="none";
+            }
+        }
+    }
+</script>
+</body>
+</html>

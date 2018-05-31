@@ -1,0 +1,67 @@
+<html>
+<head>
+    <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyChGTaoaIxtWzy5uEhPs3ifAVgj9Y_9r1Y">
+    </script>
+    <script>
+        function initialize() {
+
+            var x, y;
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition);
+            }
+
+            function showPosition(position) {
+
+                x = position.coords.latitude;
+                y = position.coords.longitude;
+                console.log(x);
+                var center = new google.maps.LatLng(x, y);
+
+                var mapProp = {
+                    center: center,
+                    zoom: 15,
+                    panControl: true,
+                    zoomControl: true,
+                    mapTypeControl: true,
+                    scaleControl: true,
+                    streetViewControl: true,
+                    overviewMapControl: true,
+                    rotateControl: true,
+                    mapTypeId: //google.maps.MapTypeId.HYBRID  //显示卫星图像的主要街道透明层
+                    // google.maps.MapTypeId.ROADMAP  //显示普通的街道地图
+                    google.maps.MapTypeId.SATELLITE  //显示卫星图像
+                    // google.maps.MapTypeId.TERRAIN  //显示带有自然特征（如地形和植被）的地图
+                };
+                var maker;
+                var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+                marker = new google.maps.Marker({
+                    position: center,
+                    animation: google.maps.Animation.BOUNCE
+                });
+
+                marker.setMap(map);
+                var infowindow = new google.maps.InfoWindow({
+                    content: "You Are Here!"
+                });
+
+                google.maps.event.addListener(marker, 'click', function () {
+                    infowindow.open(map, marker);
+                });
+
+            }
+
+
+        }
+
+        google.maps.event.addDomListener(window, 'load', initialize);
+
+
+    </script>
+</head>
+
+<body>
+<div id="googleMap" style="width:100%;height:100%;"></div>
+
+</body>
+</html>
